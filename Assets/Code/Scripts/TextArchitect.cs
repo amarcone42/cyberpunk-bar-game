@@ -11,8 +11,7 @@ public class TextArchitect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        charname.text = "Elliot";
-        charwords.text = "Hello, friend";
+
     }
 
     // Update is called once per frame

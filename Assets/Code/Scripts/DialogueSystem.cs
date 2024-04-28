@@ -16,6 +16,7 @@ public class DialogueSystem : MonoBehaviour
     {
         script = JsonUtility.FromJson<Script>(jsonFile.text);
         TextArchitect = FindAnyObjectByType<TextArchitect>();
+        TextArchitect.NewMessage(script.GetMessage(0));
     }
 
     // Update is called once per frame
@@ -26,7 +27,7 @@ public class DialogueSystem : MonoBehaviour
             ExitGame();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             TextArchitect.NewMessage(LoadNewMessage());
         }
