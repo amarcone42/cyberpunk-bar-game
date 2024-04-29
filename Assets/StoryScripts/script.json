@@ -1,0 +1,20 @@
+{
+  "script": [
+    {
+      "speaker": "Customer",
+      "text": "Hey, good evening [B], how you doin?"
+    },
+    {
+      "speaker": "Barman",
+      "text": "Good evening"
+    },
+    {
+      "speaker": "Barman",
+      "text": "Nothing much goin on here, you know..."
+    },
+    {
+      "speaker": "Customer",
+      "text": "Well, nothing it's still better than something bad they say"
+    }
+  ]
+}
