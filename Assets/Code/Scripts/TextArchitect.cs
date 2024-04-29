@@ -22,6 +22,21 @@ public class TextArchitect : MonoBehaviour
 
     public void NewMessage(Message message)
     {
+        Vector3 characterpos = new Vector3();
+        foreach (GameObject character in GameObject.FindGameObjectsWithTag("Character"))
+        {
+            if(character.name == message.GetSpeaker())
+            {
+                characterpos = character.transform.position;
+                if(character.name != "Barman")
+                {
+                    characterpos.x *= -1;
+                }
+            }
+        }
+        transform.localPosition = new Vector3(characterpos.x, characterpos.y + 120, transform.localPosition.z);
+        Debug.Log("hey");
+        Debug.Log("Posizione = x:" + transform.localPosition.x + " y:" + transform.localPosition.y + " z:" + transform.localPosition.z);
         charname.text = message.GetSpeaker();
         charwords.text = message.GetText();
     }
