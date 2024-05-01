@@ -6,6 +6,7 @@ public class Ingredient : MonoBehaviour
 {
     private string ingredientName;
     private Stats stats;
+    public DrinkManager script;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,7 @@ public class Ingredient : MonoBehaviour
 
     void OnMouseDown()
     {
+        script.Add(stats);
         Debug.Log(this.ingredientName);
     }
 
