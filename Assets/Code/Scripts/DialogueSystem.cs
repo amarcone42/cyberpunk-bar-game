@@ -12,17 +12,21 @@ public class DialogueSystem : MonoBehaviour
 
     public TextAsset jsonFile;
     private Script script;
-    private int idDay = 1;
-    private int idPart = 1;
-    private int messageIndex = 0;
+    private int idDay;
+    private int idPart;
+    private int messageIndex;
 
     void Start()
     {
+        idDay = 1;
+        idPart = 1;
+        messageIndex = 0;
+
         gameManager = GetComponent<GameManager>();
 
         script = JsonUtility.FromJson<Script>(jsonFile.text);
         TextArchitect = FindAnyObjectByType<TextArchitect>();
-        TextArchitect.NewMessage(script.GetMessage(GetActiveDialogueId(), 0));
+        
     }
 
     // DialogueSystem only use Update to get dialogue related input
@@ -62,5 +66,13 @@ public class DialogueSystem : MonoBehaviour
             gameManager.SwitchDialogueToDrink();
         }
         return script.GetMessage(GetActiveDialogueId(), messageIndex);
+    }
+
+    public void LoadGameValues()
+    {
+        idDay = 1;
+        idPart = 1;
+        messageIndex = 0;
+        TextArchitect.NewMessage(script.GetMessage(GetActiveDialogueId(), 0));
     }
 }

@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     public void StartNewGame()
     {
+        dialogueManager.LoadGameValues();
         dialogueManager.ChangeState(true);
         ShowDialogueView();
     }
