@@ -18,4 +18,9 @@ public class Ingredient : MonoBehaviour
     {
         Debug.Log(this.ingredientName);
     }
+
+    void OnMouseOver()
+    {
+
+    }
 }
