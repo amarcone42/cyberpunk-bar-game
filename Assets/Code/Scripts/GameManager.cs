@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private DialogueSystem dialogueManager;
-    [SerializeField] Canvas dialogueCanvas;
-    [SerializeField] Canvas menuCanvas;
+    [SerializeField] CCanvas menuCanvas;
+    [SerializeField] CCanvas dialogueCanvas;
+    [SerializeField] CCanvas drinkCanvas;
     void Start()
     {
         dialogueManager = GetComponent<DialogueSystem>();
@@ -31,6 +32,7 @@ public class GameManager : MonoBehaviour
 
     public Camera mainMenuCamera;
     public Camera dialogueCamera;
+    public Camera drinkCamera;
 
     public void ShowMenuView()
     {
@@ -44,11 +46,14 @@ public class GameManager : MonoBehaviour
 
         dialogueCamera.enabled = true;
         mainMenuCamera.enabled = false;
+        drinkCamera.enabled = false;
 
         dialogueCanvas.enable();
         menuCanvas.disable();
+        drinkCanvas.disable();
 
         dialogueCamera.tag = "MainCamera";
         mainMenuCamera.tag = null;
+        drinkCamera.tag = null;
     }
 }
