@@ -8,13 +8,13 @@ public class Drink
     private Stats[] drinkComponents;
     private Stats result;
 
-    Drink()
+    public Drink()
     {
         drinkComponents = new Stats[MaxComponents];
         result = new Stats(0f, 0f);
     }
 
-    void AddComponent(Stats component)
+    public void AddComponent(Stats component)
     {
         if(drinkComponents.Length == MaxComponents)
         {

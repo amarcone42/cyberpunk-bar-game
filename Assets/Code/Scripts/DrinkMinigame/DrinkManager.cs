@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class DrinkManager : MonoBehaviour
 {
+    private Drink drink;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        drink = new Drink();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.Mouse0))
-        {
-            
-        }
+
+    }
+
+    void Add(Stats stats)
+    {
+        drink.AddComponent(stats);
     }
 }
