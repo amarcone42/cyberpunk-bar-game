@@ -1,20 +1,66 @@
 {
   "script": [
     {
-      "speaker": "Customer",
-      "text": "Hey, good evening [B], how you doin?"
+      "type": "dialogue",
+      "id": "day-1_part-1",
+      "dialogue": [
+        {
+          "speaker": "Alice",
+          "text": "Hi"
+        },
+        {
+          "speaker": "Barman",
+          "text": "Welcome"
+        },
+        {
+          "speaker": "Alice",
+          "text": "I need a drink"
+        }
+      ]
     },
     {
-      "speaker": "Barman",
-      "text": "Good evening"
+      "type": "choice",
+      "choice": {
+        "validity": [
+
+        ],
+        "conditions": [
+          {
+            "name": "happiness",
+            "min": 6
+          },
+          {
+            "name": "energy",
+            "min": 6
+          },
+          {
+            "name": "drunkenness",
+            "max": 3
+          }
+        ],
+        "true": "day-1_part-2",
+        "false": "day-1_part3"
+      }
     },
     {
-      "speaker": "Barman",
-      "text": "Nothing much goin on here, you know..."
+      "type": "dialogue",
+      "id": "day-1_part-2",
+      "dialogue": [
+        {
+          "speaker": "Alice",
+          "text": "Great drink"
+        }
+      ]
     },
     {
-      "speaker": "Customer",
-      "text": "Well, nothing it's still better than something bad they say"
+      "type": "dialogue",
+      "id": "day-1_part-3",
+      "dialogue": [
+        {
+          "speaker": "Alice",
+          "text": "Bad drink"
+        }
+      ]
     }
   ]
 }

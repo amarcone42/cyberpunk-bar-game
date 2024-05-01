@@ -186,6 +186,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a0b9c98a48971d409565bf72a52f1a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 356781264}
+  menuCanvas: {fileID: 7965164190756227975}
+  mainMenuCamera: {fileID: 1646971188}
+  dialogueCamera: {fileID: 1076244014}
 --- !u!1 &99826703
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,6 +930,7 @@ GameObject:
   - component: {fileID: 356781263}
   - component: {fileID: 356781262}
   - component: {fileID: 356781261}
+  - component: {fileID: 356781264}
   m_Layer: 0
   m_Name: Canvas Dialogue
   m_TagString: Untagged
@@ -1016,6 +1021,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &356781264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356781259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86159eef519fb5b4cb6f27dcbb808cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &428796647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1921,7 +1938,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d3d5dea8da241254880256c9369efdb5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3983,13 +4000,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646971185}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.56412464, z: -0, w: 0.82568973}
-  m_LocalPosition: {x: -103.9, y: 67.7, z: -52.1}
+  m_LocalRotation: {x: 0.03546594, y: 0.5452998, z: -0.025393298, w: 0.8371054}
+  m_LocalPosition: {x: -94.8, y: 67, z: -71.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 95844553}
-  m_LocalEulerAnglesHint: {x: 0, y: 68.683, z: 0}
+  m_LocalEulerAnglesHint: {x: 4.995, y: 66.152, z: -0.221}
 --- !u!81 &1646971187
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4031,7 +4048,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 50
+  field of view: 45
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -5799,6 +5816,7 @@ GameObject:
   - component: {fileID: 5078616182291874135}
   - component: {fileID: 4605929974769082190}
   - component: {fileID: 3506530781849519159}
+  - component: {fileID: 7965164190756227975}
   m_Layer: 0
   m_Name: Canvas Main
   m_TagString: Untagged
@@ -6771,6 +6789,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &7965164190756227975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2934083788570691363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86159eef519fb5b4cb6f27dcbb808cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8049085887677516525
 MonoBehaviour:
   m_ObjectHideFlags: 0

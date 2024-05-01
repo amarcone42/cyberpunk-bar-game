@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private DialogueSystem dialogueManager;
+    [SerializeField] Canvas dialogueCanvas;
+    [SerializeField] Canvas menuCanvas;
     void Start()
     {
-        
+        dialogueManager = GetComponent<DialogueSystem>();
     }
 
     // Update is called once per frame
@@ -19,11 +21,34 @@ public class GameManager : MonoBehaviour
 
     public void StartNewGame()
     {
-        SceneManager.LoadScene("Dialogue");
+        ShowDialogueView();
     }
 
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public Camera mainMenuCamera;
+    public Camera dialogueCamera;
+
+    public void ShowMenuView()
+    {
+        dialogueCamera.enabled = false;
+        mainMenuCamera.enabled = true;
+    }
+
+    public void ShowDialogueView()
+    {
+        dialogueManager.ChangeState(true);
+
+        dialogueCamera.enabled = true;
+        mainMenuCamera.enabled = false;
+
+        dialogueCanvas.enable();
+        menuCanvas.disable();
+
+        dialogueCamera.tag = "MainCamera";
+        mainMenuCamera.tag = null;
     }
 }
