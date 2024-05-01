@@ -210,6 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 226d1ee16d398f843bfca6cbb621049a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 95844555}
   TextArchitect: {fileID: 733949548}
   jsonFile: {fileID: 4900000, guid: 806986dc5fb07bf4294d0ca76deb2f03, type: 3}
 --- !u!114 &95844555

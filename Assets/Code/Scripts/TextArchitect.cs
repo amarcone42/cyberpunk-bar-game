@@ -8,18 +8,6 @@ public class TextArchitect : MonoBehaviour
     [SerializeField] TextMeshProUGUI charname;
     [SerializeField] TextMeshProUGUI charwords;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void NewMessage(Message message)
     {
         Vector3 characterpos = new Vector3();
