@@ -5,42 +5,57 @@ using UnityEngine;
 
 public class DialogueSystem : MonoBehaviour
 {
+    private Boolean managerStatus = false;
     [SerializeField] TextArchitect TextArchitect;
 
     public TextAsset jsonFile;
     private Script script;
-    private int index = 0;
+    private int idDay = 1;
+    private int idPart = 1;
+    private int messageIndex = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         script = JsonUtility.FromJson<Script>(jsonFile.text);
         TextArchitect = FindAnyObjectByType<TextArchitect>();
-        TextArchitect.NewMessage(script.GetMessage(0));
+        TextArchitect.NewMessage(script.GetMessage(GetActiveDialogueId(), 0));
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (managerStatus)
         {
-            ExitGame();
-        }
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                ExitGame();
+            }
 
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
-        {
-            TextArchitect.NewMessage(LoadNewMessage());
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+            {
+                TextArchitect.NewMessage(LoadNewMessage());
+            }
         }
-        
+    }
+
+    public void ChangeState(Boolean state)
+    {
+        managerStatus = state;
+    }
+
+    private string GetActiveDialogueId()
+    {
+        return "day-" + idDay + "_part-" + idPart;
     }
 
     private Message LoadNewMessage()
     {
-        if (index < script.GetLength() - 1)
+        if (messageIndex < script.GetLength(GetActiveDialogueId()) - 1)
         {
-            index++;
+            messageIndex++;
         }
-        return script.GetMessage(index);
+        return script.GetMessage(GetActiveDialogueId(), messageIndex);
     }
 
     public void ExitGame()
