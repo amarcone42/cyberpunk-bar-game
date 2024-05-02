@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class DrinkManager : MonoBehaviour
 {
@@ -18,12 +19,12 @@ public class DrinkManager : MonoBehaviour
 
     }
 
-    public void Add(Stats stats)
+    public void Add(Ingredient ingredient)
     {
         try
         {
-            drink.AddComponent(stats);
-        }catch(DrinkIsFullException ex)
+            drink.AddComponent(ingredient);
+        }catch(DrinkIsFullException)
         {
             Debug.Log("Non puoi aggiungere altri ingredienti");
         }

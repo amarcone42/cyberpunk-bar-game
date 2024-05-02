@@ -1,30 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
-//using UnityEngine;
+using System;
+using UnityEngine;
 
 [System.Serializable]
 public class Drink
 {
-    private const int MaxComponents = 4;
-    private List<Stats> drinkComponents;
-    private Stats result;
+    private const int MaxIngredients = 4;
+    private List<Ingredient> drinkIngredients;
+    private Ingredient result;
 
     public Drink()
     {
-        drinkComponents = new List<Stats>();
-        result = new Stats(0f, 0f);
+        drinkIngredients = new List<Ingredient>();
+        result = new Ingredient("Result", new Stats(0f, 0f));
     }
 
-    public void AddComponent(Stats component)
+    public void AddComponent(Ingredient ingredient)
     {
-        if(drinkComponents.Count == MaxComponents)
+        if(drinkIngredients.Count == MaxIngredients)
         {
             throw new DrinkIsFullException(); 
         }else
         {
-            drinkComponents.Add(component);
-            result = Stats.Stats_Sum(result, component);
+            drinkIngredients.Add(ingredient);
+            result.setStats(Stats.Stats_Sum(result.getStats(), ingredient.getStats()));
+            Debug.Log(drinkIngredients.Count);
         }
-        //Debug.Log(drinkComponents.Count);
     }
 }

@@ -1,11 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 [System.Serializable]
 public class Stats
 {
-    private float parametro1 {get; set;}
-    private float parametro2 {get; set;}
+    private float parametro1;
+    private float parametro2;
+
+    public float getParametro1()
+    {
+        return parametro1;
+    }
+    public float getParametro2()
+    {
+        return parametro2;
+    }
 
     public Stats(float stat1, float stat2)
     {

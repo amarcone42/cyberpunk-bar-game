@@ -3721,8 +3721,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8916254512336073282}
+  - component: {fileID: 8916254512336073286}
   - component: {fileID: 8916254512336073284}
-  - component: {fileID: 8916254512336073285}
+  - component: {fileID: 8916254512336073287}
   m_Layer: 0
   m_Name: GenericBottle
   m_TagString: Untagged
@@ -5111,6 +5112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5390834083275036178}
+  - component: {fileID: 5390834083275036179}
   m_Layer: 0
   m_Name: MartiniGlass
   m_TagString: Untagged
@@ -6637,6 +6639,18 @@ Transform:
   - {fileID: 1753117807}
   m_Father: {fileID: 55505917}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &5390834083275036179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848532352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e66de9742aae2a0418bf8ecb4a3795f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &5431127767772620331
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7571,7 +7585,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   script: {fileID: 445291172}
---- !u!65 &8916254512336073285
+--- !u!114 &8916254512336073286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336734008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e66de9742aae2a0418bf8ecb4a3795f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &8916254512336073287
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7590,7 +7616,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.5, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9161845346261197423
 GameObject:

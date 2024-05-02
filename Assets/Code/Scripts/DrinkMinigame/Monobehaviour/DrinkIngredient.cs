@@ -1,24 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class Ingredient : MonoBehaviour
+public class DrinkIngredient : MonoBehaviour
 {
-    private string ingredientName;
-    private Stats stats;
+    private Ingredient ingredient;
     public DrinkManager script;
 
     // Start is called before the first frame update
     void Start()
     {
-        ingredientName = "vodka";
-        stats = new Stats(0.2f, 0.5f);
+        ingredient = new Ingredient("vodka", new Stats(0.2f, 0.5f));
     }
 
     void OnMouseDown()
     {
-        script.Add(stats);
-        Debug.Log(this.ingredientName);
+        Debug.Log(ingredient.getName());
+        script.Add(ingredient);
     }
 
     void OnMouseOver()
