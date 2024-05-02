@@ -5,7 +5,7 @@ using System;
 
 public class DrinkIngredient : MonoBehaviour
 {
-    public DrinkManager drinkScript;
+    private DrinkManager drinkScript;
     private UIManager uiScript;
 
     private Ingredient ingredient;
@@ -16,6 +16,7 @@ public class DrinkIngredient : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        drinkScript = GameObject.Find("Camera Drink").GetComponent<DrinkManager>();
         uiScript = GameObject.Find("Camera Drink").GetComponent<UIManager>();
 
         ingredient = new Ingredient(ingredientName, new Stats(stat1, stat2));
