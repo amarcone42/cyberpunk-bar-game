@@ -1,40 +1,50 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DialogueSystem : MonoBehaviour
 {
+    private GameManager gameManager;
+
     private Boolean managerStatus = false;
     [SerializeField] TextArchitect TextArchitect;
 
     public TextAsset jsonFile;
-    private Script script;
-    private int idDay = 1;
-    private int idPart = 1;
-    private int messageIndex = 0;
+    private GameScript script;
 
-    // Start is called before the first frame update
     void Start()
     {
-        script = JsonUtility.FromJson<Script>(jsonFile.text);
+        gameManager = GetComponent<GameManager>();
+
+        script = JsonUtility.FromJson<GameScript>(jsonFile.text);
         TextArchitect = FindAnyObjectByType<TextArchitect>();
-        TextArchitect.NewMessage(script.GetMessage(GetActiveDialogueId(), 0));
+        
     }
 
-    // Update is called once per frame
+    // DialogueSystem only use Update to get dialogue related input
     void Update()
     {
         if (managerStatus)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                ExitGame();
+                gameManager.ReturnToMainMenu();
             }
 
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
-                TextArchitect.NewMessage(LoadNewMessage());
+                if (script.HasNextMessage())
+                {
+                    // Show next message
+                    TextArchitect.WriteMessage(script.NextMessage());
+                } else if (script.GetNextSceneCategory() == "dialogue")
+                {
+                    // Show next scene
+                } else
+                {
+                    script.NextScene();
+                    // Switch to drink mode
+                    gameManager.SwitchDialogueToDrink(script.GetOrder());
+                }
             }
         }
     }
@@ -44,22 +54,17 @@ public class DialogueSystem : MonoBehaviour
         managerStatus = state;
     }
 
-    private string GetActiveDialogueId()
-    {
-        return "day-" + idDay + "_part-" + idPart;
-    }
 
-    private Message LoadNewMessage()
+    public void LoadDialogueValues()
     {
-        if (messageIndex < script.GetLength(GetActiveDialogueId()) - 1)
+        script.SetScriptValues(0, 0, 1, 1);
+        if (script.GetSceneCategory() == "dialogue")
         {
-            messageIndex++;
+            TextArchitect.WriteMessage(script.GetActiveMessage());
+        } else
+        {
+            Debug.Log("Not a message: " + script.GetSceneCategory());
         }
-        return script.GetMessage(GetActiveDialogueId(), messageIndex);
-    }
-
-    public void ExitGame()
-    {
-        Application.Quit();
+        
     }
 }
