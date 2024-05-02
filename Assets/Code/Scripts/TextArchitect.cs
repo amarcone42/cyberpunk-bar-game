@@ -22,8 +22,7 @@ public class TextArchitect : MonoBehaviour
             }
         }
         transform.localPosition = new Vector3(characterpos.x, characterpos.y + 120, transform.localPosition.z);
-        Debug.Log("hey");
-        Debug.Log("Posizione = x:" + transform.localPosition.x + " y:" + transform.localPosition.y + " z:" + transform.localPosition.z);
+        Debug.Log("Posizione testo = x:" + transform.localPosition.x + " y:" + transform.localPosition.y + " z:" + transform.localPosition.z);
         charname.text = message.GetSpeaker();
         charwords.text = message.GetText();
     }

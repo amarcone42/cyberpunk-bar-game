@@ -6,14 +6,14 @@ using UnityEngine;
 public class SceneBlock
 {
     public string category;
-    public string day;
-    public string part;
+    public int day;
+    public int part;
     public Message[] messages;
     public Requirement[] requirements;
     public Condition[] conditions;
-    public string failure;
-    public string good;
-    public string best;
+    public int failure;
+    public int good;
+    public int best;
 
     public Message GetMessage(int index) { return messages[index]; }
 

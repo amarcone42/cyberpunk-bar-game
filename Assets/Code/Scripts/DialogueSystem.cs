@@ -34,12 +34,17 @@ public class DialogueSystem : MonoBehaviour
             {
                 if (script.HasNextMessage())
                 {
+                    // Show next message
                     TextArchitect.WriteMessage(script.NextMessage());
+                } else if (script.GetNextSceneCategory() == "dialogue")
+                {
+                    // Show next scene
                 } else
                 {
-                    gameManager.SwitchDialogueToDrink();
+                    script.NextScene();
+                    // Switch to drink mode
+                    gameManager.SwitchDialogueToDrink(script.GetOrder());
                 }
-                
             }
         }
     }
@@ -59,7 +64,6 @@ public class DialogueSystem : MonoBehaviour
         } else
         {
             Debug.Log("Not a message: " + script.GetSceneCategory());
-            Debug.Log(script.GetActiveScene());
         }
         
     }

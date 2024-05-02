@@ -1,7 +1,7 @@
 [System.Serializable]
 public class Condition
 {
-    public string name { get; set; }
-    public int min { get; set; }
-    public int max { get; set; }
+    public string name;
+    public int min;
+    public int max;
 }

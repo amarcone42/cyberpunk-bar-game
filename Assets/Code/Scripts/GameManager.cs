@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         ActivateMenuCamera();
     }
 
-    public void SwitchDialogueToDrink()
+    public void SwitchDialogueToDrink(Order order)
     {
         //TODO: activate drink manager
         dialogueManager.ChangeState(false);

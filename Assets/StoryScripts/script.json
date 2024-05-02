@@ -3,7 +3,7 @@
     {
       "category": "dialogue",
       "day": "1",
-      "part": "part-1",
+      "part": "1",
       "messages": [
         {
           "speaker": "Customer",
@@ -23,6 +23,7 @@
       "category": "order",
       "requirements": [
         {
+          "category": "ingredient",
           "name": "gin",
           "dose": "1"
         }
@@ -41,14 +42,14 @@
           "max": 3
         }
       ],
-      "failure": "part-2",
-      "good": "part3",
-      "best": "part-4"
+      "failure": "2",
+      "good": "3",
+      "best": "4"
     },
     {
       "category": "dialogue",
       "day": "1",
-      "id": "part-2",
+      "part": "2",
       "messages": [
         {
           "speaker": "Customer",
@@ -59,7 +60,7 @@
     {
       "category": "dialogue",
       "day": "1",
-      "part": "part-3",
+      "part": "3",
       "messages": [
         {
           "speaker": "Customer",
@@ -70,7 +71,7 @@
     {
       "category": "dialogue",
       "day": "1",
-      "part": "part-4",
+      "part": "4",
       "messages": [
         {
           "speaker": "Customer",
