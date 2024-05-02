@@ -17,19 +17,22 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         dialogueManager = GetComponent<DialogueSystem>();
+        mainMenuCamera.enabled = true;
+        dialogueCamera.enabled = false;
+        drinkCamera.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void StartNewGame()
     {
         dialogueManager.LoadDialogueValues();
         dialogueManager.ChangeState(true);
-        ShowDialogueView();
+        ActivateDialogueCamera();
     }
 
     public void ReturnToMainMenu()
@@ -37,14 +40,20 @@ public class GameManager : MonoBehaviour
         dialogueManager.ChangeState(false);
         //TODO: deactivate drink manager
 
-        mainMenuCamera.enabled = true;
-        dialogueCamera.enabled = false;
-        drinkCamera.enabled = false;
+        ActivateMenuCamera();
+    }
 
-        menuCanvas.enable();
-        dialogueCanvas.disable();
-        drinkCanvas.disable();
-
+    public void SwitchDialogueToDrink()
+    {
+        //TODO: activate drink manager
+        dialogueManager.ChangeState(false);
+        ActivateDrinkCamera();
+    }
+    public void SwitchDrinkToDialogue()
+    {
+        dialogueManager.ChangeState(true);
+        //TODO: deactivate drink manager
+        ActivateDialogueCamera();
     }
 
     public void ExitGame()
@@ -54,7 +63,7 @@ public class GameManager : MonoBehaviour
 
     
 
-    public void ShowMenuView()
+    public void ActivateMenuCamera()
     {
         mainMenuCamera.enabled = true;
         dialogueCamera.enabled = false;
@@ -65,7 +74,7 @@ public class GameManager : MonoBehaviour
         drinkCanvas.disable();
     }
 
-    public void ShowDialogueView()
+    public void ActivateDialogueCamera()
     {
         dialogueCamera.enabled = true;
         mainMenuCamera.enabled = false;
@@ -76,27 +85,18 @@ public class GameManager : MonoBehaviour
         drinkCanvas.disable();
     }
 
-    public void ShowDrinkView()
+    public void ActivateDrinkCamera()
     {
         drinkCamera.enabled = true;
         dialogueCamera.enabled = false;
         mainMenuCamera.enabled = false;
 
+        
         dialogueCanvas.disable();
         menuCanvas.disable();
         drinkCanvas.enable();
+
     }
 
-    public void SwitchDialogueToDrink()
-    {
-        //TODO: activate drink manager
-        dialogueManager.ChangeState(false);
-        ShowDrinkView();
-    }
-    public void SwitchDrinkToDialogue()
-    {
-        dialogueManager.ChangeState(true);
-        //TODO: deactivate drink manager
-        ShowDialogueView();
-    }
+    
 }
