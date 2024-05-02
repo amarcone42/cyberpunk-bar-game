@@ -5,23 +5,35 @@ using System;
 
 public class DrinkIngredient : MonoBehaviour
 {
+    public DrinkManager drinkScript;
+    private UIManager uiScript;
+
     private Ingredient ingredient;
-    public DrinkManager script;
+    public string ingredientName;
+    public float stat1;
+    public float stat2;
 
     // Start is called before the first frame update
     void Start()
     {
-        ingredient = new Ingredient("vodka", new Stats(0.2f, 0.5f));
+        uiScript = GameObject.Find("Camera Drink").GetComponent<UIManager>();
+
+        ingredient = new Ingredient(ingredientName, new Stats(stat1, stat2));
     }
 
     void OnMouseDown()
     {
         Debug.Log(ingredient.getName());
-        script.Add(ingredient);
+        drinkScript.Add(ingredient);
     }
 
-    void OnMouseOver()
+    void OnMouseEnter()
     {
+        uiScript.EnableInfo(ingredient.ToString());
+    }
 
+    void OnMouseExit()
+    {
+        uiScript.DisableInfo();
     }
 }

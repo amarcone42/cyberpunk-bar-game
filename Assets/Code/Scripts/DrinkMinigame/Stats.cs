@@ -37,4 +37,9 @@ public class Stats
     {
         return firstParameter + secondParameter;
     }
+
+    public override string ToString()
+    {
+        return "Paramentro1: " + getParametro1() + "\n" + "Paramentro2: " + getParametro2() + " ";
+    }
 }

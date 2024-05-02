@@ -31,4 +31,9 @@ public class Ingredient
         this.name = name;
         this.stats = stats;
     }
+
+    public override string ToString()
+    {
+        return "Name: " + getName() + "\n" + "\nStats:\n" + stats.ToString() + " ";
+    }
 }
