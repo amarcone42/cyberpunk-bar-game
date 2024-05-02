@@ -1,11 +1,12 @@
 {
-  "script": [
+  "scenes": [
     {
-      "type": "dialogue",
-      "id": "day-1_part-1",
-      "dialogue": [
+      "category": "dialogue",
+      "day": "1",
+      "part": "part-1",
+      "messages": [
         {
-          "speaker": "Alice",
+          "speaker": "Customer",
           "text": "Hi"
         },
         {
@@ -13,52 +14,67 @@
           "text": "Welcome"
         },
         {
-          "speaker": "Alice",
+          "speaker": "Customer",
           "text": "I need a drink"
         }
       ]
     },
     {
-      "type": "choice",
-      "choice": {
-        "validity": [
-
-        ],
-        "conditions": [
-          {
-            "name": "happiness",
-            "min": 6
-          },
-          {
-            "name": "energy",
-            "min": 6
-          },
-          {
-            "name": "drunkenness",
-            "max": 3
-          }
-        ],
-        "true": "day-1_part-2",
-        "false": "day-1_part3"
-      }
+      "category": "order",
+      "requirements": [
+        {
+          "name": "gin",
+          "dose": "1"
+        }
+      ],
+      "conditions": [
+        {
+          "name": "happiness",
+          "min": 6
+        },
+        {
+          "name": "energy",
+          "min": 6
+        },
+        {
+          "name": "drunkenness",
+          "max": 3
+        }
+      ],
+      "failure": "part-2",
+      "good": "part3",
+      "best": "part-4"
     },
     {
-      "type": "dialogue",
-      "id": "day-1_part-2",
-      "dialogue": [
+      "category": "dialogue",
+      "day": "1",
+      "id": "part-2",
+      "messages": [
         {
-          "speaker": "Alice",
-          "text": "Great drink"
+          "speaker": "Customer",
+          "text": "Bad drink"
         }
       ]
     },
     {
-      "type": "dialogue",
-      "id": "day-1_part-3",
-      "dialogue": [
+      "category": "dialogue",
+      "day": "1",
+      "part": "part-3",
+      "messages": [
         {
-          "speaker": "Alice",
-          "text": "Bad drink"
+          "speaker": "Customer",
+          "text": "Good drink"
+        }
+      ]
+    },
+    {
+      "category": "dialogue",
+      "day": "1",
+      "part": "part-4",
+      "messages": [
+        {
+          "speaker": "Customer",
+          "text": "Great drink!"
         }
       ]
     }

@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using TMPro;
 using UnityEngine;
 
@@ -8,7 +7,7 @@ public class TextArchitect : MonoBehaviour
     [SerializeField] TextMeshProUGUI charname;
     [SerializeField] TextMeshProUGUI charwords;
 
-    public void NewMessage(Message message)
+    public void WriteMessage(Message message)
     {
         Vector3 characterpos = new Vector3();
         foreach (GameObject character in GameObject.FindGameObjectsWithTag("Character"))

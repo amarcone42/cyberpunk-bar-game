@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     public void StartNewGame()
     {
-        dialogueManager.LoadGameValues();
+        dialogueManager.LoadDialogueValues();
         dialogueManager.ChangeState(true);
         ShowDialogueView();
     }
@@ -45,9 +45,6 @@ public class GameManager : MonoBehaviour
         dialogueCanvas.disable();
         drinkCanvas.disable();
 
-        mainMenuCamera.tag = "MainCamera";
-        dialogueCamera.tag = null;
-        drinkCamera.tag = null;
     }
 
     public void ExitGame()
@@ -59,8 +56,13 @@ public class GameManager : MonoBehaviour
 
     public void ShowMenuView()
     {
-        dialogueCamera.enabled = false;
         mainMenuCamera.enabled = true;
+        dialogueCamera.enabled = false;
+        drinkCamera.enabled = false;
+
+        menuCanvas.enable();
+        dialogueCanvas.disable();
+        drinkCanvas.disable();
     }
 
     public void ShowDialogueView()
@@ -72,10 +74,6 @@ public class GameManager : MonoBehaviour
         dialogueCanvas.enable();
         menuCanvas.disable();
         drinkCanvas.disable();
-
-        dialogueCamera.tag = "MainCamera";
-        mainMenuCamera.tag = null;
-        drinkCamera.tag = null;
     }
 
     public void ShowDrinkView()
@@ -87,10 +85,6 @@ public class GameManager : MonoBehaviour
         dialogueCanvas.disable();
         menuCanvas.disable();
         drinkCanvas.enable();
-
-        dialogueCamera.tag = null;
-        mainMenuCamera.tag = null;
-        drinkCamera.tag = "MainCamera";
     }
 
     public void SwitchDialogueToDrink()

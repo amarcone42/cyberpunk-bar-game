@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class Bilboard : MonoBehaviour
 {
-    Camera mainCamera;
-
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        mainCamera = Camera.main;
-        transform.rotation = Quaternion.Euler(0f, mainCamera.transform.rotation.eulerAngles.y, 0f);
+        if (Camera.main != null)
+        {
+            transform.rotation = Quaternion.Euler(0f, Camera.main.transform.rotation.eulerAngles.y, 0f);
+        }
     }
 }

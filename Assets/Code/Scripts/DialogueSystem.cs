@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DialogueSystem : MonoBehaviour
@@ -11,20 +9,13 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] TextArchitect TextArchitect;
 
     public TextAsset jsonFile;
-    private Script script;
-    private int idDay;
-    private int idPart;
-    private int messageIndex;
+    private GameScript script;
 
     void Start()
     {
-        idDay = 1;
-        idPart = 1;
-        messageIndex = 0;
-
         gameManager = GetComponent<GameManager>();
 
-        script = JsonUtility.FromJson<Script>(jsonFile.text);
+        script = JsonUtility.FromJson<GameScript>(jsonFile.text);
         TextArchitect = FindAnyObjectByType<TextArchitect>();
         
     }
@@ -41,7 +32,14 @@ public class DialogueSystem : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
-                TextArchitect.NewMessage(LoadNewMessage());
+                if (script.HasNextMessage())
+                {
+                    TextArchitect.WriteMessage(script.NextMessage());
+                } else
+                {
+                    gameManager.SwitchDialogueToDrink();
+                }
+                
             }
         }
     }
@@ -51,28 +49,18 @@ public class DialogueSystem : MonoBehaviour
         managerStatus = state;
     }
 
-    private string GetActiveDialogueId()
-    {
-        return "day-" + idDay + "_part-" + idPart;
-    }
 
-    private Message LoadNewMessage()
+    public void LoadDialogueValues()
     {
-        if (messageIndex < script.GetLength(GetActiveDialogueId()) - 1)
+        script.SetScriptValues(0, 0, 1, 1);
+        if (script.GetSceneCategory() == "dialogue")
         {
-            messageIndex++;
+            TextArchitect.WriteMessage(script.GetActiveMessage());
         } else
         {
-            gameManager.SwitchDialogueToDrink();
+            Debug.Log("Not a message: " + script.GetSceneCategory());
+            Debug.Log(script.GetActiveScene());
         }
-        return script.GetMessage(GetActiveDialogueId(), messageIndex);
-    }
-
-    public void LoadGameValues()
-    {
-        idDay = 1;
-        idPart = 1;
-        messageIndex = 0;
-        TextArchitect.NewMessage(script.GetMessage(GetActiveDialogueId(), 0));
+        
     }
 }
