@@ -11,6 +11,8 @@ public class DialogueSystem : MonoBehaviour
     public TextAsset jsonFile;
     private GameScript script;
 
+    public AudioSourceLoop bgm;
+
     void Start()
     {
         gameManager = GetComponent<GameManager>();
@@ -52,6 +54,14 @@ public class DialogueSystem : MonoBehaviour
     public void ChangeState(Boolean state)
     {
         managerStatus = state;
+        if (managerStatus)
+        {
+            bgm.PlayMusic();
+        }
+        else
+        {
+            bgm.StopMusic();
+        }
     }
 
 
