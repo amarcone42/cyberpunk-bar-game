@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
-public class Order : MonoBehaviour
+public class Order
 {
     public Requirement[] requirements;
     public Condition[] conditions;
