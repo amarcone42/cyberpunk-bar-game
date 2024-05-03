@@ -11,6 +11,8 @@ public class DrinkManager : MonoBehaviour
     private Drink drink;
     private Order order;
 
+    public AudioSourceLoop bgm;
+
     // Start is called before the first frame update
     void Start()
     {
