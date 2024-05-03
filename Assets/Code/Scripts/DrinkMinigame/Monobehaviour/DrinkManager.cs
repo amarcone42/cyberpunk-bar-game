@@ -7,6 +7,7 @@ public class DrinkManager : MonoBehaviour
 {
     private GameManager gameManager;
     private Boolean managerStatus = false;
+    private DrinkUIManager uiScript;
     private Drink drink;
     private Order order;
 
@@ -14,6 +15,7 @@ public class DrinkManager : MonoBehaviour
     void Start()
     {
         gameManager = GetComponent<GameManager>();
+        uiScript = GameObject.Find("Controller").GetComponent<DrinkUIManager>();
         drink = new Drink();
     }
 
@@ -33,6 +35,26 @@ public class DrinkManager : MonoBehaviour
         this.order = order;
     }
 
+    public void checkDrink()
+    {
+        // Controllo sul risultato del drink
+        Debug.Log(order.GetDay());
+
+        // Restituzione parametri del risultato
+        gameManager.SwitchDrinkToDialogue(order.GetDay(), order.GetBest());
+    }
+
+    private bool checkRequirements()
+    {
+        return true;
+    }
+
+    private bool checkConditions()
+    {
+        return true;
+    }
+
+    //single ingredient operations
     public void Add(Ingredient ingredient)
     {
         try
@@ -45,11 +67,13 @@ public class DrinkManager : MonoBehaviour
         
     }
 
-    public void ServeDrink()
+    public void showIngredient(string ingredientString)
     {
-        // Controllo sul risultato del drink
+        uiScript.EnableInfo(ingredientString);
+    }
 
-        // Restituzione parametri del risultato
-        gameManager.SwitchDrinkToDialogue(order.GetDay(), order.GetBest());
+    public void hideIngredient()
+    {
+        uiScript.DisableInfo();
     }
 }

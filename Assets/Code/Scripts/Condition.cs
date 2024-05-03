@@ -8,7 +8,7 @@ public class Condition
 
     /*
      * Name values:
-     * alcohol-level
+     * alcohol_level
      * happiness
      * anger
      * anxiety

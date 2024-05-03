@@ -13,7 +13,7 @@ public class Drink
     public Drink()
     {
         drinkIngredients = new List<Ingredient>();
-        result = new Ingredient("Result", new Stats(0f, 0f));
+        result = new Ingredient("Result", new Stats(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f));
     }
 
     public void AddComponent(Ingredient ingredient)

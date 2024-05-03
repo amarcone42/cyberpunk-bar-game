@@ -6,35 +6,40 @@ using System;
 public class DrinkIngredient : MonoBehaviour
 {
     private DrinkManager drinkScript;
-    private DrinkUIManager uiScript;
-
     private Ingredient ingredient;
     public string ingredientName;
-    public float stat1;
-    public float stat2;
+
+    public Stats stats;
+
+    public float alcohol_level;
+    public float happiness;
+    public float anger;
+    public float anxiety;
+    public float fear;
+    public float confident;
+    public float tenderness;
+    public float energy;
 
     // Start is called before the first frame update
     void Start()
     {
         drinkScript = GameObject.Find("Controller").GetComponent<DrinkManager>();
-        uiScript = GameObject.Find("Controller").GetComponent<DrinkUIManager>();
-
-        ingredient = new Ingredient(ingredientName, new Stats(stat1, stat2));
+        ingredient = new Ingredient(ingredientName, new Stats(alcohol_level, happiness, anger, anxiety, fear, confident, tenderness, energy));
     }
 
     void OnMouseDown()
     {
-        Debug.Log(ingredient.getName());
+        //Debug.Log(ingredient.getName());
         drinkScript.Add(ingredient);
     }
 
     void OnMouseEnter()
     {
-        uiScript.EnableInfo(ingredient.ToString());
+        drinkScript.showIngredient(ingredient.ToString());
     }
 
     void OnMouseExit()
     {
-        uiScript.DisableInfo();
+        drinkScript.hideIngredient();
     }
 }
