@@ -41,6 +41,8 @@ public class DialogueSystem : MonoBehaviour
                 } else if (script.GetNextSceneCategory() == "dialogue")
                 {
                     // Show next scene
+                    script.NextScene();
+                    TextArchitect.WriteMessage(script.GetActiveMessage());
                 } else
                 {
                     script.NextScene();

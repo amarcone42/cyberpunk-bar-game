@@ -1316,8 +1316,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Rum
-  stat1: -0.25
-  stat2: 0.75
+  alcohol_level: 0
+  happiness: 0
+  anger: 0
+  anxiety: 0
+  fear: 0
+  confident: 0
+  tenderness: 0
+  energy: 0
 --- !u!114 &358679348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2328,7 +2334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16352195, g: 0.16352195, b: 0.16352195, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4536,8 +4542,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Gin
-  stat1: 0.75
-  stat2: 0.25
+  alcohol_level: 0
+  happiness: 0
+  anger: 0
+  anxiety: 0
+  fear: 0
+  confident: 0
+  tenderness: 0
+  energy: 0
 --- !u!114 &1366458959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5912,8 +5924,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Whisky
-  stat1: 0.25
-  stat2: -0.25
+  alcohol_level: 0
+  happiness: 0
+  anger: 0
+  anxiety: 0
+  fear: 0
+  confident: 0
+  tenderness: 0
+  energy: 0
 --- !u!114 &1822561922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8835,8 +8853,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Vodka
-  stat1: 1
-  stat2: 0.5
+  alcohol_level: 0
+  happiness: 0
+  anger: 0
+  anxiety: 0
+  fear: 0
+  confident: 0
+  tenderness: 0
+  energy: 0
 --- !u!114 &8916254512336073286
 MonoBehaviour:
   m_ObjectHideFlags: 0

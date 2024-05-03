@@ -49,6 +49,11 @@ public class GameScript
     public void NextScene()
     {
         sceneIndex++;
+        messageIndex = 0;
+        if (scenes[sceneIndex].part != null)
+        {
+            idPart = scenes[sceneIndex].part;
+        }
     }
 
 
