@@ -31,15 +31,15 @@
       "conditions": [
         {
           "name": "happiness",
-          "min": 6
+          "min": 0.60
         },
         {
           "name": "energy",
-          "min": 6
+          "min": 0.60
         },
         {
-          "name": "drunkenness",
-          "max": 3
+          "name": "alcohol-level",
+          "max": 0.30
         }
       ],
       "failure": "2",

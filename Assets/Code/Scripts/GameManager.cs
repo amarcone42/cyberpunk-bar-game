@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private DialogueSystem dialogueManager;
+    private DrinkManager drinkManager;
     [SerializeField] CCanvas menuCanvas;
     [SerializeField] CCanvas dialogueCanvas;
     [SerializeField] CCanvas drinkCanvas;
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         dialogueManager = GetComponent<DialogueSystem>();
+        drinkManager = GetComponent<DrinkManager>();
         mainMenuCamera.enabled = true;
         dialogueCamera.enabled = false;
         drinkCamera.enabled = false;
@@ -45,14 +47,15 @@ public class GameManager : MonoBehaviour
 
     public void SwitchDialogueToDrink(Order order)
     {
-        //TODO: activate drink manager
+        drinkManager.ChangeState(true);
         dialogueManager.ChangeState(false);
         ActivateDrinkCamera();
+        drinkManager.SetOrder(order);
     }
-    public void SwitchDrinkToDialogue()
+    public void SwitchDrinkToDialogue(int day, int part)
     {
         dialogueManager.ChangeState(true);
-        //TODO: deactivate drink manager
+        drinkManager.ChangeState(false);
         ActivateDialogueCamera();
     }
 
