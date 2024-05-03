@@ -77,4 +77,14 @@ public class DialogueSystem : MonoBehaviour
         }
         
     }
+
+    public void ChangeScene(int day, int part)
+    {
+        // Finds the correct scene index
+        int tmpsceneindex = script.FindSceneIndex(day, part);
+        // Sets dialogue parameters to the new stating point
+        script.SetScriptValues(tmpsceneindex, 0,day,part);
+        // Writes the first message of the new dialogue
+        TextArchitect.WriteMessage(script.GetActiveMessage());
+    }
 }

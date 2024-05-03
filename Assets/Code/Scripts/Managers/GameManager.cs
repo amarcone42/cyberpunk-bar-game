@@ -33,37 +33,30 @@ public class GameManager : MonoBehaviour
     public void StartNewGame()
     {
         dialogueManager.LoadDialogueValues();
-        dialogueManager.ChangeState(true);
-        ActivateDialogueCamera();
-        DeactivateMenuCamera();
-        DeactivateDrinkCamera();
+        EnableDialogueScene();
+        DisableMenuCamera();
+        DisableDrinkScene();
         bgm.StopMusic();
     }
 
     public void ReturnToMainMenu()
     {
-        dialogueManager.ChangeState(false);
-        drinkManager.ChangeState(false);
-
-        ActivateMenuCamera();
-        DeactivateDialogueCamera();
-        DeactivateDrinkCamera();
+        EnableMenuCamera();
+        DisableDialogueScene();
+        DisableDrinkScene();
     }
 
     public void SwitchDialogueToDrink(Order order)
     {
-        drinkManager.ChangeState(true);
-        dialogueManager.ChangeState(false);
-        ActivateDrinkCamera();
-        DeactivateDialogueCamera();
+        EnableDrinkScene();
+        DisableDialogueScene();
         drinkManager.SetOrder(order);
     }
     public void SwitchDrinkToDialogue(int day, int part)
     {
-        dialogueManager.ChangeState(true);
-        drinkManager.ChangeState(false);
-        ActivateDialogueCamera();
-        DeactivateDrinkCamera();
+        EnableDialogueScene();
+        DisableDrinkScene();
+        dialogueManager.ChangeScene(day, part);
     }
 
     public void ExitGame()
@@ -73,7 +66,7 @@ public class GameManager : MonoBehaviour
 
     
 
-    public void ActivateMenuCamera()
+    public void EnableMenuCamera()
     {
         mainMenuCamera.enabled = true;
         menuCanvas.enable();
@@ -81,7 +74,7 @@ public class GameManager : MonoBehaviour
         bgm.PlayMusic();
         mainMenuCamera.AddComponent<AudioListener>();
     }
-    public void DeactivateMenuCamera()
+    public void DisableMenuCamera()
     {
         mainMenuCamera.enabled = false;
         menuCanvas.disable();
@@ -90,30 +83,38 @@ public class GameManager : MonoBehaviour
         Destroy(mainMenuCamera.GetComponent<AudioListener>());
     }
 
-    public void ActivateDialogueCamera()
+    public void EnableDialogueScene()
     {
+        dialogueManager.ChangeState(true);
+
         dialogueCamera.enabled = true;
         dialogueCanvas.enable();
 
         dialogueCamera.AddComponent<AudioListener>();
     }
-    public void DeactivateDialogueCamera()
+    public void DisableDialogueScene()
     {
+        dialogueManager.ChangeState(false);
+
         dialogueCamera.enabled = false;
         dialogueCanvas.disable();
 
         Destroy(dialogueCamera.GetComponent<AudioListener>());
     }
 
-    public void ActivateDrinkCamera()
+    public void EnableDrinkScene()
     {
+        drinkManager.ChangeState(true);
+
         drinkCamera.enabled = true;
         drinkCanvas.enable();
 
         drinkCamera.AddComponent<AudioListener>();
     }
-    public void DeactivateDrinkCamera()
+    public void DisableDrinkScene()
     {
+        drinkManager.ChangeState(false);
+
         drinkCamera.enabled = false;
         drinkCanvas.disable();
 

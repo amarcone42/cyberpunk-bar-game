@@ -79,4 +79,16 @@ public class GameScript
         idPart = part;
     }
 
+    public int FindSceneIndex(int day, int part)
+    {
+        for (int i = 0; i < scenes.Length; i++)
+        {
+            if (scenes[i].category == "dialogue" && scenes[i].day == day && scenes[i].part == part)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+
 }
