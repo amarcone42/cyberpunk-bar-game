@@ -29,7 +29,6 @@ public class DrinkIngredient : MonoBehaviour
 
     void OnMouseDown()
     {
-        //Debug.Log(ingredient.getName());
         drinkScript.Add(ingredient);
     }
 
