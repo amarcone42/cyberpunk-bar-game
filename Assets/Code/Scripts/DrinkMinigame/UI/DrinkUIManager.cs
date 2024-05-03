@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class UIManager : MonoBehaviour
+public class DrinkUIManager : MonoBehaviour
 {
     public GameObject infoContainer;
     public TMP_Text infoText;
