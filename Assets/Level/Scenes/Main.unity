@@ -2067,7 +2067,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 300, y: 250}
+  m_AnchoredPosition: {x: 300, y: 400}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &676195349
@@ -4487,8 +4487,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text New Text New Text New Text New Text New Text New Text New Text
-    New Text New Text New Text New Text
+  m_text: "New Text New \n\nText New Text \nNew Text New \nText New Text \nNew Text
+    New \nText New Text \nNew Text New\nText New Text"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0a29663123c680b4584f76ec1dd93c9f, type: 2}
   m_sharedMaterial: {fileID: -2664089618279488184, guid: 0a29663123c680b4584f76ec1dd93c9f, type: 2}
@@ -4680,7 +4680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: gin
   alcohol_level: 0.3
-  happiness: 0
+  happiness: 0.6
   anger: 0
   anxiety: 0
   fear: 0
@@ -6576,7 +6576,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 350}
+  m_SizeDelta: {x: 500, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1885232602
 MonoBehaviour:
@@ -9237,7 +9237,7 @@ MonoBehaviour:
   fear: 0
   confident: 0
   tenderness: 0
-  energy: 0
+  energy: 0.4
 --- !u!114 &8916254512336073286
 MonoBehaviour:
   m_ObjectHideFlags: 0

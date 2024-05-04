@@ -34,6 +34,6 @@ public class Ingredient
 
     public override string ToString()
     {
-        return "Name: " + GetName() + "\n" + "\nStats:\n" + stats.ToString() + " ";
+        return "Name: " + GetName() + "\n" + "Stats:\n" + stats.ToString() + " ";
     }
 }
