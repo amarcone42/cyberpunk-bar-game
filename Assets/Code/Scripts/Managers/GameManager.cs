@@ -152,7 +152,7 @@ public class GameManager : MonoBehaviour
 
 
 
-    public void ShowSingleCharacter(string name)
+    public void ShowSingleCustomer(string name)
     {
         Debug.Log("Show single character");
         foreach (GameObject customer in customers)
@@ -169,5 +169,14 @@ public class GameManager : MonoBehaviour
             }
         }
         Debug.Log("End function");
+    }
+
+    public void ShowMainCharacter()
+    {
+        player.SetActive(true);
+    }
+    public void HideMainCharacter()
+    {
+        player.SetActive(false);
     }
 }
