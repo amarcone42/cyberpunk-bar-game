@@ -280,7 +280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &99826704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2667,6 +2667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 744074516}
   - component: {fileID: 744074515}
+  - component: {fileID: 744074517}
   m_Layer: 0
   m_Name: CustomerTest
   m_TagString: Character
@@ -2702,6 +2703,27 @@ Transform:
   - {fileID: 1868066195}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &744074517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744074514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3138996406dc24ba1fc733a6349202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clientName: Giorgio
+  alcohol_level: 0
+  happiness: 3
+  anger: 6
+  anxiety: 8
+  fear: 3
+  confident: 2
+  tenderness: 2
+  energy: 1
 --- !u!1 &752316758
 GameObject:
   m_ObjectHideFlags: 0
@@ -3657,7 +3679,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1086707925
 Transform:
   m_ObjectHideFlags: 0
