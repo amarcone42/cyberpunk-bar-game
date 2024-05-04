@@ -50,6 +50,8 @@ public class DialogueSystem : MonoBehaviour
                     }
                     // Show next scene
                     script.NextScene();
+                    // Show only the active character
+                    gameManager.ShowSingleCharacter(script.GetActiveScene().character);
                     TextArchitect.WriteMessage(script.GetActiveMessage());
 
                 } else
@@ -83,6 +85,7 @@ public class DialogueSystem : MonoBehaviour
         {
             // Show first day
             StartCoroutine(NewDayCoroutine(1));
+            gameManager.ShowSingleCharacter(script.GetActiveScene().character);
             TextArchitect.WriteMessage(script.GetActiveMessage());
         } else
         {

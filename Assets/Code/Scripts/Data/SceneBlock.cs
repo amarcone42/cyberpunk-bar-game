@@ -8,6 +8,7 @@ public class SceneBlock
     public string category;
     public int day;
     public int part;
+    public string character;
     public Message[] messages;
     public Requirement[] requirements;
     public Condition[] conditions;
