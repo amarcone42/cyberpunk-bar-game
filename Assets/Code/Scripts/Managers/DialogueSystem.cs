@@ -89,7 +89,7 @@ public class DialogueSystem : MonoBehaviour
             TextArchitect.WriteMessage(script.GetActiveMessage());
         } else
         {
-            Debug.Log("Not a message: " + script.GetSceneCategory());
+            Debug.Log("Not a message: The scene category is " + script.GetSceneCategory());
         }
         
     }

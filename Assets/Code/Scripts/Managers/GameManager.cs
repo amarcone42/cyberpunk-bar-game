@@ -56,11 +56,11 @@ public class GameManager : MonoBehaviour
 
     public void StartNewGame()
     {
-        dialogueManager.LoadDialogueValues();
         EnableDialogueScene();
         DisableMenuCamera();
         DisableDrinkScene();
         bgm.StopMusic();
+        dialogueManager.LoadDialogueValues();
     }
 
     public void ReturnToMainMenu()
@@ -68,6 +68,11 @@ public class GameManager : MonoBehaviour
         EnableMenuCamera();
         DisableDialogueScene();
         DisableDrinkScene();
+
+        foreach (GameObject customer in customers)
+        {
+            customer.SetActive(false);
+        }
     }
 
     public void SwitchDialogueToDrink(Order order)
