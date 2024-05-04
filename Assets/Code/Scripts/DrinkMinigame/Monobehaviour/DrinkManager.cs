@@ -13,6 +13,8 @@ public class DrinkManager : MonoBehaviour
     private int ingredientDose;
     private float resultAlcohol;
     private bool resultRequirements;
+    private Stats drinkStats;
+    private bool resultCheckConditions;
 
     
 
@@ -42,6 +44,13 @@ public class DrinkManager : MonoBehaviour
 
     public void checkDrink()
     {
+        Debug.Log("Inizio a stampare i requirements");
+        foreach(Requirement r in order.GetRequirements())
+        {
+            Debug.Log(r.ToString());
+        }
+        Debug.Log("Fine stampa requirements");
+
         // Controllo sul risultato del drink
         if(checkRequirements() == true)
         {
@@ -75,6 +84,7 @@ public class DrinkManager : MonoBehaviour
             }
             else if(r.category == "ingredient")
             {
+                Debug.Log("ingredient category");
                 resultRequirements = checkRequirementIngredients(r);
             }
         }
@@ -102,13 +112,18 @@ public class DrinkManager : MonoBehaviour
 
         foreach(Ingredient i in drink.GetDrinkIngredients())
         {
+            Debug.Log("ingredient name: " + i.GetName());
+            Debug.Log("requirement name: " + r.name);
             if(i.GetName().Equals(r.name))
             {
+                Debug.Log("i nomi sono uguali");
                 ingredientDose++;
             }
         }
 
-        if(ingredientDose == r.dose)
+        Debug.Log("ingredient doses :" + ingredientDose);
+        Debug.Log("required doses :" + r.dose);
+        if(ingredientDose >= r.dose)
         {
             return true;
         }else
@@ -119,7 +134,49 @@ public class DrinkManager : MonoBehaviour
 
     private bool checkConditions()
     {
-        return true;
+        resultCheckConditions = true;
+        drinkStats = drink.GetResult().GetStats();
+
+        foreach(Condition c in order.GetConditions())
+        {
+            switch(c.name)
+            {
+                case "alcohol_level":
+                    if(checkConditionMinMax(c, drinkStats.GetAlcohol_level()) == false)
+                    {
+                        return (resultCheckConditions = false);
+                    }
+                break;
+            }
+        }
+
+        return resultCheckConditions;
+    }
+
+    private bool checkConditionMinMax(Condition c, float drinkParameter)
+    {
+        if(c.bound.Equals("min"))
+        {
+            if(drinkParameter >= c.value)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            if(drinkParameter <= c.value)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 
     //single ingredient operations

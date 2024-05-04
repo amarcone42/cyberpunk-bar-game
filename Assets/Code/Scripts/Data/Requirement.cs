@@ -8,4 +8,13 @@ public class Requirement
     // Parameters for alcohol
     public float alcoholMin;        // Min alcohol required
     public float alcoholMax;        // Max alcohol required
+
+    public override string ToString()
+    {
+        return "category: " + category +
+        "\n" + "name: " + name + 
+        "\n" + "dose: " + dose +
+        "\n" + "alcoholMin: " + alcoholMin +
+        "\n" + "alcoholMax: " + alcoholMax + " ";
+    }
 }

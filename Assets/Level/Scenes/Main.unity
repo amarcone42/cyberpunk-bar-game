@@ -3395,7 +3395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1086707925
 Transform:
   m_ObjectHideFlags: 0
@@ -4415,7 +4415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df92e55545d84149ae9595d8e315d7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Gin
+  ingredientName: gin
   alcohol_level: 0
   happiness: 0
   anger: 0
