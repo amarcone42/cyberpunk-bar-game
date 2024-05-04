@@ -42,6 +42,7 @@
     },
     {
       "category": "order",
+      "description": "I would like something with Gin",
       "requirements": [
         {
           "category": "ingredient",

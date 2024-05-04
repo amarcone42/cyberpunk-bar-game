@@ -81,13 +81,14 @@ public class GameScript
     {
         if (GetSceneCategory() == "order")
         {
+            string tmpdescription = GetScene(sceneIndex).description;
             Requirement[] tmpreq = GetScene(sceneIndex).requirements;
             Condition[] tmpcon = GetScene(sceneIndex).conditions;
             int tmpday = GetScene(sceneIndex - 1).day;
             int tmpfail = GetScene(sceneIndex).failure;
             int tmpgood = GetScene(sceneIndex).good;
             int tmpbest = GetScene(sceneIndex).best;
-            return new Order(tmpreq, tmpcon, tmpday, tmpfail, tmpgood, tmpbest);
+            return new Order(tmpdescription, tmpreq, tmpcon, tmpday, tmpfail, tmpgood, tmpbest);
         }
         else
         {

@@ -10,6 +10,7 @@ public class SceneBlock
     public int part;
     public string character;
     public Message[] messages;
+    public string description;
     public Requirement[] requirements;
     public Condition[] conditions;
     public int failure;
