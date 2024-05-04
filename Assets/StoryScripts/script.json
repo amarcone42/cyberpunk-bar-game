@@ -31,15 +31,18 @@
       "conditions": [
         {
           "name": "happiness",
-          "min": 0.60
+          "bound": "min",
+          "value": 0.60
         },
         {
           "name": "energy",
-          "min": 0.60
+          "bound": "min",
+          "value": 0.60
         },
         {
-          "name": "alcohol-level",
-          "max": 0.30
+          "name": "alcohol_level",
+          "bound": "max",
+          "value": 0.30
         }
       ],
       "failure": "2",
