@@ -54,11 +54,11 @@ public class GameScript
     {
         sceneIndex++;
         messageIndex = 0;
-        if (scenes[sceneIndex].part != null)
+        if (scenes[sceneIndex].part > 0)
         {
             idPart = scenes[sceneIndex].part;
         }
-        if (scenes[sceneIndex].day != null)
+        if (scenes[sceneIndex].day > 0)
         {
             idDay = scenes[sceneIndex].day;
         }
