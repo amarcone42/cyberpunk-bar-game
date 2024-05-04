@@ -46,13 +46,6 @@ public class DrinkManager : MonoBehaviour
 
     public void checkDrink()
     {
-        Debug.Log("Inizio a stampare i requirements");
-        foreach(Requirement r in order.GetRequirements())
-        {
-            Debug.Log(r.ToString());
-        }
-        Debug.Log("Fine stampa requirements");
-
         // Controllo sul risultato del drink
         if(checkRequirements() == true)
         {
@@ -65,6 +58,7 @@ public class DrinkManager : MonoBehaviour
             else
             {
                 gameManager.SwitchDrinkToDialogue(order.GetDay(), order.GetGood());
+                Debug.Log("checkConditions è false");
             }
         }
         else
@@ -76,7 +70,7 @@ public class DrinkManager : MonoBehaviour
 
     private bool checkRequirements()
     {
-        resultRequirements = false;
+        resultRequirements = true;
 
         foreach (Requirement r in order.GetRequirements())
         {
@@ -86,8 +80,12 @@ public class DrinkManager : MonoBehaviour
             }
             else if(r.category == "ingredient")
             {
-                Debug.Log("ingredient category");
                 resultRequirements = checkRequirementIngredients(r);
+            }
+
+            if(resultRequirements == false)
+            {
+                return resultRequirements;
             }
         }
 
@@ -114,17 +112,12 @@ public class DrinkManager : MonoBehaviour
 
         foreach(Ingredient i in drink.GetDrinkIngredients())
         {
-            Debug.Log("ingredient name: " + i.GetName());
-            Debug.Log("requirement name: " + r.name);
             if(i.GetName().Equals(r.name))
             {
-                Debug.Log("i nomi sono uguali");
                 ingredientDose++;
             }
         }
 
-        Debug.Log("ingredient doses :" + ingredientDose);
-        Debug.Log("required doses :" + r.dose);
         if(ingredientDose >= r.dose)
         {
             return true;
@@ -144,11 +137,41 @@ public class DrinkManager : MonoBehaviour
             switch(c.name)
             {
                 case "alcohol_level":
-                    if(checkConditionMinMax(c, drinkStats.GetAlcohol_level()) == false)
-                    {
-                        return (resultCheckConditions = false);
-                    }
+                    resultCheckConditions = checkConditionMinMax(c, drinkStats.GetAlcohol_level());
                 break;
+
+                case "happiness":
+                    resultCheckConditions = checkConditionMinMax(c, drinkStats.GetHappiness());
+                break;
+
+                case "anger":
+                    resultCheckConditions = checkConditionMinMax(c, drinkStats.GetAnger());
+                break;
+
+                case "anxiety":
+                    resultCheckConditions = checkConditionMinMax(c, drinkStats.GetAnxiety());
+                break;
+
+                case "fear":
+                    resultCheckConditions = checkConditionMinMax(c, drinkStats.GetFear());
+                break;
+
+                case "confident":
+                    resultCheckConditions = checkConditionMinMax(c, drinkStats.GetConfident());
+                break;
+
+                case "tenderness":
+                    resultCheckConditions = checkConditionMinMax(c, drinkStats.GetTenderness());
+                break;
+
+                case "energy":
+                    resultCheckConditions = checkConditionMinMax(c, drinkStats.GetEnergy());
+                break;
+            }
+
+            if(resultCheckConditions == false)
+            {
+                return resultCheckConditions;
             }
         }
 
