@@ -8,11 +8,11 @@ public class Ingredient
     private string name;
     private Stats stats;
 
-    public string getName()
+    public string GetName()
     {
         return name;
     }
-    public Stats getStats() 
+    public Stats GetStats() 
     {
         return stats;
     }
@@ -34,6 +34,6 @@ public class Ingredient
 
     public override string ToString()
     {
-        return "Name: " + getName() + "\n" + "\nStats:\n" + stats.ToString() + " ";
+        return "Name: " + GetName() + "\n" + "\nStats:\n" + stats.ToString() + " ";
     }
 }

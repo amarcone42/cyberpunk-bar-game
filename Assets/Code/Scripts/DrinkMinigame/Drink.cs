@@ -10,6 +10,16 @@ public class Drink
     private List<Ingredient> drinkIngredients;
     private Ingredient result;
 
+    public List<Ingredient> GetDrinkIngredients()
+    {
+        return drinkIngredients;
+    }
+
+    public Ingredient GetResult()
+    {
+        return result;
+    }
+
     public Drink()
     {
         drinkIngredients = new List<Ingredient>();
@@ -24,7 +34,7 @@ public class Drink
         }else
         {
             drinkIngredients.Add(ingredient);
-            result.setStats(Stats.Stats_Sum(result.getStats(), ingredient.getStats()));
+            result.setStats(Stats.Stats_Sum(result.GetStats(), ingredient.GetStats()));
             Debug.Log(drinkIngredients.Count);
         }
     }
