@@ -16,6 +16,10 @@ public class GameScript
     {
         return scenes[index];
     }
+    public int GetNextSceneDay()
+    {
+        return scenes[sceneIndex + 1].day;
+    }
     public SceneBlock GetActiveScene()
     {
         return scenes[sceneIndex];
@@ -54,6 +58,22 @@ public class GameScript
         {
             idPart = scenes[sceneIndex].part;
         }
+        if (scenes[sceneIndex].day != null)
+        {
+            idDay = scenes[sceneIndex].day;
+        }
+    }
+
+    public Boolean CheckNewDay()
+    {
+        if (GetNextSceneCategory() == "dialogue")
+        {
+            if (scenes[sceneIndex].day < scenes[sceneIndex + 1].day)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
 

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class DialogueSystem : MonoBehaviour
@@ -7,6 +8,7 @@ public class DialogueSystem : MonoBehaviour
 
     private Boolean managerStatus = false;
     [SerializeField] TextArchitect TextArchitect;
+    [SerializeField] ChapterScreen chapterScreen;
 
     public TextAsset jsonFile;
     private GameScript script;
@@ -40,9 +42,16 @@ public class DialogueSystem : MonoBehaviour
                     TextArchitect.WriteMessage(script.NextMessage());
                 } else if (script.GetNextSceneCategory() == "dialogue")
                 {
+                    // Check new day
+                    if (script.CheckNewDay())
+                    {
+                        // Show new day
+                        StartCoroutine(NewDayCoroutine());
+                    }
                     // Show next scene
                     script.NextScene();
                     TextArchitect.WriteMessage(script.GetActiveMessage());
+
                 } else
                 {
                     script.NextScene();
@@ -72,6 +81,8 @@ public class DialogueSystem : MonoBehaviour
         script.SetScriptValues(0, 0, 1, 1);
         if (script.GetSceneCategory() == "dialogue")
         {
+            // Show first day
+            StartCoroutine(NewDayCoroutine(1));
             TextArchitect.WriteMessage(script.GetActiveMessage());
         } else
         {
@@ -88,5 +99,26 @@ public class DialogueSystem : MonoBehaviour
         script.SetScriptValues(tmpsceneindex, 0,day,part);
         // Writes the first message of the new dialogue
         TextArchitect.WriteMessage(script.GetActiveMessage());
+    }
+
+    IEnumerator NewDayCoroutine()
+    {
+        managerStatus = false;
+        chapterScreen.Show(script.GetNextSceneDay());
+
+        yield return new WaitForSeconds(5);
+
+        chapterScreen.Hide();
+        managerStatus = true;
+    }
+    IEnumerator NewDayCoroutine(int day)
+    {
+        managerStatus = false;
+        chapterScreen.Show(day);
+
+        yield return new WaitForSeconds(5);
+
+        chapterScreen.Hide();
+        managerStatus = true;
     }
 }
