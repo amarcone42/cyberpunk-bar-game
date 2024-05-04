@@ -9,6 +9,9 @@ public class DrinkUIManager : MonoBehaviour
     public GameObject infoContainer;
     public TMP_Text infoText;
 
+    public GameObject infoCustomer;
+    public TMP_Text infoCustomerText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,5 +34,11 @@ public class DrinkUIManager : MonoBehaviour
     public void DisableInfo()
     {
         infoContainer.SetActive(false);
+    }
+
+    public void ShowCustomerInfo(string customer)
+    {
+        infoCustomerText.text = customer;
+        infoCustomer.SetActive(true);
     }
 }

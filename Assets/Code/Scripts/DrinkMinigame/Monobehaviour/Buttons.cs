@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ServeDrink : MonoBehaviour
+public class Buttons : MonoBehaviour
 {
     private DrinkManager drinkScript;
 
@@ -10,6 +11,7 @@ public class ServeDrink : MonoBehaviour
     void Start()
     {
         drinkScript = GameObject.Find("Controller").GetComponent<DrinkManager>();
+        this.GetComponent<Button>().onClick.AddListener(taskOnClick);
     }
 
     // Update is called once per frame
@@ -18,18 +20,16 @@ public class ServeDrink : MonoBehaviour
         
     }
 
-    void OnMouseDown()
+    void taskOnClick()
     {
+        if(this.name == "Serve")
+        {
+            drinkScript.checkDrink();
+        }
 
-    }
-
-    void OnMouseEnter()
-    {
-        drinkScript.showIngredient(drinkScript.GetDrink().GetResult().ToString());
-    }
-
-    void OnMouseExit()
-    {
-        drinkScript.hideIngredient();
+        if(this.name == "Reset")
+        {
+            drinkScript.RemoveAll();
+        }
     }
 }

@@ -80,12 +80,15 @@ public class GameManager : MonoBehaviour
         EnableDrinkScene();
         DisableDialogueScene();
         drinkManager.SetOrder(order);
+        drinkManager.ShowCustomer(findActiveCustomer().GetComponent<ClientData>().GetClient().ToString());
+        HideMainCharacter();
     }
     public void SwitchDrinkToDialogue(int day, int part)
     {
         EnableDialogueScene();
         DisableDrinkScene();
         dialogueManager.ChangeScene(day, part);
+        ShowMainCharacter();
     }
 
     public void ExitGame()
@@ -169,6 +172,19 @@ public class GameManager : MonoBehaviour
             }
         }
         Debug.Log("End function");
+    }
+
+    public GameObject findActiveCustomer()
+    {
+        foreach(GameObject customer in customers)
+        {
+            if(customer.activeSelf == true)
+            {
+                return customer;
+            }
+        }
+
+        return null;
     }
 
     public void ShowMainCharacter()

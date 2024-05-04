@@ -44,6 +44,11 @@ public class DrinkManager : MonoBehaviour
         this.order = order;
     }
 
+    public Drink GetDrink()
+    {
+        return drink;
+    }
+
     public void checkDrink()
     {
         // Controllo sul risultato del drink
@@ -217,6 +222,11 @@ public class DrinkManager : MonoBehaviour
         
     }
 
+    public void RemoveAll()
+    {
+        drink.RemoveComponents();
+    }
+
 
     public void showIngredient(string ingredientString)
     {
@@ -226,5 +236,10 @@ public class DrinkManager : MonoBehaviour
     public void hideIngredient()
     {
         uiScript.DisableInfo();
+    }
+
+    public void ShowCustomer(string customer)
+    {
+        uiScript.ShowCustomerInfo(customer);
     }
 }

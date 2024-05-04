@@ -30,4 +30,9 @@ public class ClientData : MonoBehaviour
     {
         
     }
+
+    public Client GetClient()
+    {
+        return client;
+    }
 }
