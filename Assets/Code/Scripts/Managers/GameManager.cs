@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
@@ -57,7 +58,7 @@ public class GameManager : MonoBehaviour
     public void StartNewGame()
     {
         EnableDialogueScene();
-        DisableMenuCamera();
+        DisableMenuScene();
         DisableDrinkScene();
         bgm.StopMusic();
         dialogueManager.LoadDialogueValues();
@@ -65,7 +66,7 @@ public class GameManager : MonoBehaviour
 
     public void ReturnToMainMenu()
     {
-        EnableMenuCamera();
+        EnableMenuScene();
         DisableDialogueScene();
         DisableDrinkScene();
 
@@ -93,9 +94,10 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-    
 
-    public void EnableMenuCamera()
+
+
+    public void EnableMenuScene()
     {
         mainMenuCamera.enabled = true;
         menuCanvas.enable();
@@ -103,7 +105,7 @@ public class GameManager : MonoBehaviour
         bgm.PlayMusic();
         mainMenuCamera.AddComponent<AudioListener>();
     }
-    public void DisableMenuCamera()
+    public void DisableMenuScene()
     {
         mainMenuCamera.enabled = false;
         menuCanvas.disable();
