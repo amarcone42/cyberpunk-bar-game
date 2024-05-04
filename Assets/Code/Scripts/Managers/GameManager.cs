@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
         EnableDrinkScene();
         DisableDialogueScene();
         drinkManager.SetOrder(order);
-        drinkManager.ShowCustomer(findActiveCustomer().GetComponent<ClientData>().GetClient().ToString());
+        drinkManager.ShowCustomer(findActiveCustomer().GetComponent<ClientData>().GetClient().ToString(), order.description);
         HideMainCharacter();
     }
     public void SwitchDrinkToDialogue(int day, int part)

@@ -238,8 +238,8 @@ public class DrinkManager : MonoBehaviour
         uiScript.DisableInfo();
     }
 
-    public void ShowCustomer(string customer)
+    public void ShowCustomer(string customer, string description)
     {
-        uiScript.ShowCustomerInfo(customer);
+        uiScript.ShowCustomerInfo(customer, description);
     }
 }

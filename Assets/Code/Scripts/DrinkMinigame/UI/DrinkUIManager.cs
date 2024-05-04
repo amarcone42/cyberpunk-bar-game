@@ -11,6 +11,8 @@ public class DrinkUIManager : MonoBehaviour
 
     public GameObject infoCustomer;
     public TMP_Text infoCustomerText;
+    public GameObject customerRequestContainer;
+    public TMP_Text customerRequestText;
 
     // Start is called before the first frame update
     void Start()
@@ -36,9 +38,13 @@ public class DrinkUIManager : MonoBehaviour
         infoContainer.SetActive(false);
     }
 
-    public void ShowCustomerInfo(string customer)
+    public void ShowCustomerInfo(string customer, string request)
     {
         infoCustomerText.text = customer;
         infoCustomer.SetActive(true);
+        customerRequestText.text = request;
+        customerRequestContainer.SetActive(true);
+
+
     }
 }
