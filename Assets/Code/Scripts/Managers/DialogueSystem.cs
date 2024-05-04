@@ -50,6 +50,8 @@ public class DialogueSystem : MonoBehaviour
                     }
                     // Show next scene
                     script.NextScene();
+                    // Show only the active character
+                    gameManager.ShowSingleCustomer(script.GetActiveScene().character);
                     TextArchitect.WriteMessage(script.GetActiveMessage());
 
                 } else
@@ -83,10 +85,11 @@ public class DialogueSystem : MonoBehaviour
         {
             // Show first day
             StartCoroutine(NewDayCoroutine(1));
+            gameManager.ShowSingleCustomer(script.GetActiveScene().character);
             TextArchitect.WriteMessage(script.GetActiveMessage());
         } else
         {
-            Debug.Log("Not a message: " + script.GetSceneCategory());
+            Debug.Log("Not a message: The scene category is " + script.GetSceneCategory());
         }
         
     }
