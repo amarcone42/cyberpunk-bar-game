@@ -4,6 +4,7 @@
       "category": "dialogue",
       "day": "1",
       "part": "1",
+      "character": "Adam",
       "messages": [
         {
           "speaker": "Customer",
@@ -14,7 +15,7 @@
           "text": "Welcome"
         },
         {
-          "speaker": "Customer",
+          "speaker": "Adam",
           "text": "I need a drink"
         }
       ]
@@ -22,10 +23,11 @@
     {
       "category": "dialogue",
       "day": "1",
-      "part": "2",
+      "part": "5",
+      "character": "Jingke",
       "messages": [
         {
-          "speaker": "Customer",
+          "speaker": "Jingke",
           "text": "What?"
         },
         {
@@ -33,13 +35,14 @@
           "text": "Welcome"
         },
         {
-          "speaker": "Customer",
-          "text": "Am I still here?"
+          "speaker": "Jingke",
+          "text": "Why am I here?"
         }
       ]
     },
     {
       "category": "order",
+      "description": "I would like something with Gin",
       "requirements": [
         {
           "category": "ingredient",
@@ -72,6 +75,7 @@
       "category": "dialogue",
       "day": "1",
       "part": "2",
+      "character": "Adam",
       "messages": [
         {
           "speaker": "Customer",
@@ -83,6 +87,7 @@
       "category": "dialogue",
       "day": "1",
       "part": "3",
+      "character": "Adam",
       "messages": [
         {
           "speaker": "Customer",
@@ -94,6 +99,7 @@
       "category": "dialogue",
       "day": "1",
       "part": "4",
+      "character": "Adam",
       "messages": [
         {
           "speaker": "Customer",

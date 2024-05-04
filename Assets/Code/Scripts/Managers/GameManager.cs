@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class GameManager : MonoBehaviour
     public Camera drinkCamera;
 
     public AudioSourceLoop bgm;
+    public GameObject player;
+    public GameObject[] customers;
 
     void Start()
     {
@@ -22,6 +25,27 @@ public class GameManager : MonoBehaviour
         mainMenuCamera.enabled = true;
         dialogueCamera.enabled = false;
         drinkCamera.enabled = false;
+        
+        // Characters visibility
+        int n = 0;  // Number of customers
+        foreach (GameObject character in GameObject.FindGameObjectsWithTag("Character"))
+        {
+            if (character.name != player.name)
+            {
+                n++;
+            }
+        }
+        customers = new GameObject[n];
+        int i = 0;
+        foreach (GameObject character in GameObject.FindGameObjectsWithTag("Character"))
+        {
+            if (character.name != player.name)
+            {
+                customers[i] = character;
+                i++;
+                character.SetActive(false);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -32,11 +56,11 @@ public class GameManager : MonoBehaviour
 
     public void StartNewGame()
     {
-        dialogueManager.LoadDialogueValues();
         EnableDialogueScene();
         DisableMenuCamera();
         DisableDrinkScene();
         bgm.StopMusic();
+        dialogueManager.LoadDialogueValues();
     }
 
     public void ReturnToMainMenu()
@@ -44,6 +68,11 @@ public class GameManager : MonoBehaviour
         EnableMenuCamera();
         DisableDialogueScene();
         DisableDrinkScene();
+
+        foreach (GameObject customer in customers)
+        {
+            customer.SetActive(false);
+        }
     }
 
     public void SwitchDialogueToDrink(Order order)
@@ -121,4 +150,33 @@ public class GameManager : MonoBehaviour
         Destroy(drinkCamera.GetComponent<AudioListener>());
     }
 
+
+
+    public void ShowSingleCustomer(string name)
+    {
+        Debug.Log("Show single character");
+        foreach (GameObject customer in customers)
+        {
+            Debug.Log(customer.name);
+            if (customer.name == name)
+            {
+                Debug.Log("Yes");
+                customer.SetActive(true);  // Shows the selected character
+            } else {
+
+                Debug.Log("No");
+                customer.SetActive(false);
+            }
+        }
+        Debug.Log("End function");
+    }
+
+    public void ShowMainCharacter()
+    {
+        player.SetActive(true);
+    }
+    public void HideMainCharacter()
+    {
+        player.SetActive(false);
+    }
 }
