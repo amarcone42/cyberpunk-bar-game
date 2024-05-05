@@ -37,6 +37,14 @@ public class DrinkManager : MonoBehaviour
     public void ChangeState(Boolean state)
     {
         managerStatus = state;
+        if (managerStatus)
+        {
+            bgm.PlayMusic();
+        }
+        else
+        {
+            bgm.StopMusic();
+        }
     }
 
     public void SetOrder(Order order)
