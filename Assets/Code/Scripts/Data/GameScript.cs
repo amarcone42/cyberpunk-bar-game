@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 [System.Serializable]
 public class GameScript
 {
@@ -16,9 +18,26 @@ public class GameScript
     {
         return scenes[index];
     }
+    public SceneBlock GetNextScene()
+    {
+        if (sceneIndex + 1 < scenes.Length)
+        {
+            return scenes[sceneIndex + 1];
+        }
+        else
+        {
+            return null;
+        }
+    }
     public int GetNextSceneDay()
     {
-        return scenes[sceneIndex + 1].day;
+        if (sceneIndex + 1 < scenes.Length)
+        {
+            return scenes[sceneIndex + 1].day;
+        } else
+        {
+            return -1;
+        }
     }
     public SceneBlock GetActiveScene()
     {
@@ -37,7 +56,7 @@ public class GameScript
 
     public Boolean HasNextMessage()
     {
-        return messageIndex < GetScene(sceneIndex).GetMessagesNumber() - 1;
+        return messageIndex < GetActiveScene().GetMessagesNumber() - 1;
     }
     public Message GetActiveMessage()
     {
@@ -74,6 +93,18 @@ public class GameScript
             }
         }
         return false;
+    }
+
+    public Boolean CheckEnding()
+    {
+        if (sceneIndex + 1 < scenes.Length)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 
 

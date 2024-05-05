@@ -9,6 +9,7 @@ public class DialogueSystem : MonoBehaviour
     private Boolean managerStatus = false;
     [SerializeField] TextArchitect TextArchitect;
     [SerializeField] ChapterScreen chapterScreen;
+    public GameObject endScreen;
 
     public TextAsset jsonFile;
     private GameScript script;
@@ -18,6 +19,7 @@ public class DialogueSystem : MonoBehaviour
     void Start()
     {
         gameManager = GetComponent<GameManager>();
+        endScreen.SetActive(false);
 
         script = JsonUtility.FromJson<GameScript>(jsonFile.text);
         TextArchitect = FindAnyObjectByType<TextArchitect>();
@@ -36,11 +38,17 @@ public class DialogueSystem : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
-                if (script.HasNextMessage())
+                if (script.GetActiveScene().GetCategory() == "end" || script.GetNextSceneCategory() == "end")
+                {
+                    // No more scene, game ending
+                    StartCoroutine(EndScreen());
+
+                } else if (script.GetSceneCategory() == "dialogue" && script.HasNextMessage())  // The active scene has messages to read
                 {
                     // Show next message
                     TextArchitect.WriteMessage(script.NextMessage());
-                } else if (script.GetNextSceneCategory() == "dialogue")
+                } 
+                else if (script.GetNextSceneCategory() == "dialogue")
                 {
                     // Check new day
                     if (script.CheckNewDay())
@@ -54,11 +62,39 @@ public class DialogueSystem : MonoBehaviour
                     gameManager.ShowSingleCustomer(script.GetActiveScene().character);
                     TextArchitect.WriteMessage(script.GetActiveMessage());
 
-                } else
+                } else if (script.GetNextSceneCategory() == "order")
                 {
                     script.NextScene();
                     // Switch to drink mode
                     gameManager.SwitchDialogueToDrink(script.GetOrder());
+
+                } else if (script.GetNextSceneCategory() == "jump")
+                {
+                    // Find destination scene
+                    int landsceneIndex = script.FindSceneIndex(script.GetNextScene().nextDay, script.GetNextScene().nextPart);
+                    // If the destination scene it's a dialogue 
+                    if (script.GetScene(landsceneIndex).GetCategory() == "dialogue")
+                    {
+                        // Check new day
+                        if (script.CheckNewDay())
+                        {
+                            // Show new day
+                            StartCoroutine(NewDayCoroutine());
+                        }
+                        // Show next scene
+                        script.sceneIndex = landsceneIndex;
+                        script.messageIndex = 0;
+                        // Show only the active character
+                        gameManager.ShowSingleCustomer(script.GetActiveScene().character);
+                        TextArchitect.WriteMessage(script.GetActiveMessage());
+
+                    }
+                    // If the destination scene it's the end
+                    else if (script.GetScene(landsceneIndex).GetCategory() == "end")
+                    {
+                        // Game ending
+                        StartCoroutine(EndScreen());
+                    }
                 }
             }
         }
@@ -123,5 +159,13 @@ public class DialogueSystem : MonoBehaviour
 
         chapterScreen.Hide();
         managerStatus = true;
+    }
+
+    IEnumerator EndScreen()
+    {
+        endScreen.SetActive(true);
+        yield return new WaitForSeconds(8);
+        endScreen.SetActive(false);
+        gameManager.ReturnToMainMenu();
     }
 }

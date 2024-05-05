@@ -6,9 +6,11 @@ using UnityEngine;
 public class SceneBlock
 {
     public string category;
+    // Attributes for dialogue scene
     public int day;
     public int part;
     public string character;
+    // Attributes for order scene
     public Message[] messages;
     public string description;
     public Requirement[] requirements;
@@ -16,6 +18,10 @@ public class SceneBlock
     public int failure;
     public int good;
     public int best;
+    // Attributes for jump scene
+    public int nextDay;
+    public int nextPart;
+    // The end scene only has category
 
     public Message GetMessage(int index) { return messages[index]; }
 

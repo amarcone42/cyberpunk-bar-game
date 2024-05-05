@@ -4,108 +4,2279 @@
       "category": "dialogue",
       "day": "1",
       "part": "1",
-      "character": "Adam",
+      "character": "Fred",
       "messages": [
+      {
+        "speaker": "Fred",
+        "text": "Hey, good evening."
+      },
+      {
+        "speaker": "Fred",
+        "text": "How you doin?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Good evening. Nothing much goin on here, you know..."
+      },
+      {
+        "speaker": "Fred",
+        "text": "Well, nothing it's still better than something bad they say."
+      },
+      {
+        "speaker": "Fred",
+        "text": "So, how's business?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "As usual, but we've recently introduced some new drinks on the menu."
+      },
+      {
+        "speaker": "Barman",
+        "text": "I hope this will attract more customers."
+      },
+      {
+        "speaker": "Barman",
+        "text": "By the way, It's been a while since you've been here, I'm glad to see you again."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Something happened?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "You bet."
+      },
+      {
+        "speaker": "Fred",
+        "text": "My son, Gareth, you know, he was fired from his job."
+      },
+      {
+        "speaker": "Fred",
+        "text": "Shit happens, you will say, but I really cared about it."
+      },
+      {
+        "speaker": "Fred",
+        "text": "He has just been hired by the Army Energy Department, at the Third Battalion."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Isn't it the one that is dealing with the imbalances with the Dyson sphere?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "Exactly."
+      },
+      {
+        "speaker": "Fred",
+        "text": "He felt important, for the first time in his life I think, but wrong calculations, I don't know much about that shit, and he was kicked out in no time."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Oh lord, for just one single mistake?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "Yeah... Apparently the work policies are very strict to ensure the maximum grade of safety."
+      },
+      {
+        "speaker": "Fred",
+        "text": "I get it, if they made too many mistakes we'd blow up in a fraction of a second."
+      },
+      {
+        "speaker": "Fred",
+        "text": "But it wasn't the case, though..."
+      },
+      {
+        "speaker": "Barman",
+        "text": "That's wild... How does he feel about it now?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "Heh, he barely eats these days..."
+      },
+      {
+        "speaker": "Fred",
+        "text": "He's been lying on the bed for... Four days, now? I don't know."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Can't he appeal?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "No, it was excluded from the contract."
+      },
+      {
+        "speaker": "Fred",
+        "text": "Work policies are getting crazier day after day, you know."
+      },
+      {
+        "speaker": "Barman",
+        "text": "I'm so sorry. How 'bout you?"
+      },
+      {
+        "speaker": "Fred",
+        "text": " Well, I'm his father, of course I'm sad, but I'm also disappointed."
+      },
+      {
+        "speaker": "Fred",
+        "text": "He should've been more careful, God!"
+      },
+      {
+        "speaker": "Fred",
+        "text": "We've paid all those tuition and taxes for nothing..."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Why would you say so?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "'Cause he's still the same clod he's always been. I can't see where he gets it..."
+      },
+      {
+        "speaker": "Barman",
+        "text": "You didn't just stumble coming in, did you?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "No, ok, I see where this is going. I'll stop you."
+      },
+      {
+        "speaker": "Fred",
+        "text": "I have always been meticulous and precise on work."
+      },
+      {
+        "speaker": "Fred",
+        "text": "Come on! You either make it or you don't in this world, it's no more than a couple of chances."
+      },
+      {
+        "speaker": "Fred",
+        "text": "I don't want to be the father of a failure."
+      },
+      {
+        "speaker": "Fred",
+        "text": "You know what they end up doing..."
+      },
+      {
+        "speaker": "Barman",
+        "text": "They end up working in cafes?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "That's a good one. No, of course."
+      },
+      {
+        "speaker": "Fred",
+        "text": "They end up working for pennies in the lower ranks of the Defense Army..."
+      },
+      {
+        "speaker": "Fred",
+        "text": "You know what that means?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "Fighting with those creatures for all his life, if he somehow manages to survive."
+      },
+      {
+        "speaker": "Barman",
+        "text": "I get your concerns, but I'm wondering, How are you dealing with him now?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "I told him I'm disappointed."
+      },
+      {
+        "speaker": "Fred",
+        "text": "He's a total delusion for me and Katherine."
+      },
+      {
+        "speaker": "Fred",
+        "text": "God, what will others say, what a shame..." 
+      },
         {
-          "speaker": "Customer",
-          "text": "Hi"
+        "speaker": "Barman",
+        "text": "come on! What are you talking about, he made just one mistake!"
         },
         {
-          "speaker": "Barman",
-          "text": "Welcome"
-        },
+        "speaker": "Barman",
+        "text": "You will end up making him more depressed. Being that strict is useless..."
+      },
         {
-          "speaker": "Adam",
-          "text": "I need a drink"
-        }
-      ]
-    },
-    {
-      "category": "dialogue",
-      "day": "1",
-      "part": "5",
-      "character": "Jingke",
-      "messages": [
+        "speaker": "Fred",
+        "text": "Strict, huh? I appreciate your concern, but... Don't get in the way."
+      },
         {
-          "speaker": "Jingke",
-          "text": "What?"
-        },
+        "speaker": "Fred",
+        "text": "Really. I know my son better than you do. "
+      },
         {
-          "speaker": "Barman",
-          "text": "Welcome"
-        },
+        "speaker": "Fred",
+        "text": "Instead of talking 'bout him, serve me some of those... New drinks? Am I right?"
+      },
+               {
+        "speaker": "Fred",
+        "text": "I'd like something with lemon."
+      },
         {
-          "speaker": "Jingke",
-          "text": "Why am I here?"
-        }
+        "speaker": "Barman",
+        "text": "Okay... Lemme see... Oh, I think I've got something perfect for you."
+      }
       ]
     },
     {
       "category": "order",
-      "description": "I would like something with Gin",
+      "description": "I'd like something with lemon.",
       "requirements": [
         {
           "category": "ingredient",
-          "name": "gin",
+          "name": "lemon",
           "dose": "1"
         }
       ],
       "conditions": [
         {
-          "name": "happiness",
-          "bound": "min",
-          "value": 0.60
-        },
-        {
-          "name": "energy",
-          "bound": "min",
-          "value": 0.60
-        },
-        {
-          "name": "alcohol_level",
+          "name": "anger",
           "bound": "max",
-          "value": 0.30
+          "value": 0.4
+        },
+        {
+          "name": "tenderness",
+          "bound": "min",
+          "value": 0.60
         }
       ],
-      "failure": "2",
+      "failure": "4",
       "good": "3",
-      "best": "4"
+      "best": "2"
     },
     {
       "category": "dialogue",
       "day": "1",
       "part": "2",
-      "character": "Adam",
+      "character": "Fred",
       "messages": [
-        {
-          "speaker": "Customer",
-          "text": "Bad drink"
-        }
+      {
+        "speaker": "Barman",
+        "text": "So, how was your drink?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "It's nice... Refreshing..."
+      },
+      {
+        "speaker": "Barman",
+        "text": "I know, I studied it a lot to get that taste..."
+      },
+      {
+        "speaker": "Fred",
+        "text": "I feel much calmer now... Thank you."
+      },
+      {
+        "speaker": "Barman",
+        "text": "So, what were we talking about? Your son, right?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "Yeah, about him being fired at work."
+      },
+      {
+        "speaker": "Barman",
+        "text": "So, as you said, I shouldn't get in the way... But, again, why don't you try being less strict?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "Hm..."
+      },
+      {
+        "speaker": "Barman",
+        "text": "You were young too, and you made mistakes... And you still make them..."
+      },
+      {
+        "speaker": "Fred",
+        "text": "Yeah... But, I mean..."
+      },
+      {
+        "speaker": "Barman",
+        "text": "And being strict won't help his self-esteem."
+      },
+      {
+        "speaker": "Fred",
+        "text": "Yeah, I know that..."
+      },
+      {
+        "speaker": "Fred",
+        "text": "... Maybe you're right after all..."
+      },
+      {
+        "speaker": "Fred",
+        "text": "I will talk with my wife too."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Yeah, you should definitely define a strategy to deal with this situation."
+      },
+      {
+        "speaker": "Fred",
+        "text": "Yeah... Thank you, I feel much better now."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Are you going home now?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "Yeah, I think I'll talk to my son."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Bye!"
+      },
+      {
+        "speaker": "Fred",
+        "text": "Bye, see you."
+      }
       ]
+    },
+    {
+      "category": "jump",
+      "nextDay": "2",
+      "nextPart": "1"
     },
     {
       "category": "dialogue",
       "day": "1",
       "part": "3",
-      "character": "Adam",
+      "character": "Fred",
+      "messages": [
+       {
+         "speaker": "Barman",
+         "text": "So, how was your drink?"
+       },
+       {
+         "speaker": "Fred",
+         "text": "Not bad... Although I preferred something else, it's good."
+       },
+       {
+         "speaker": "Barman",
+         "text": "So, what were we talking about? Your son?"
+       },
+       {
+         "speaker": "Fred",
+         "text": "No, please, let's not talk about this."
+       },
+       {
+         "speaker": "Barman",
+         "text": "You sure?"
+       },
+       {
+         "speaker": "Fred",
+         "text": "Yeah, I'll deal with this alone."
+       },
+       {
+         "speaker": "Fred",
+         "text": "I'll try to be less harsh, but if he doesn't find another job in one month, I'll kick him out."
+       },
+       {
+         "speaker": "Barman",
+         "text": "For real?"
+       },
+       {
+         "speaker": "Fred",
+         "text": "Yeah... That's the only way."
+       },
+       {
+         "speaker": "Fred",
+         "text": "Now I'll go home, see you."
+       },
+       {
+         "speaker": "Barman",
+         "text": "Bye!"
+       }
+       ]
+     },
+     {
+       "category": "jump",
+       "nextDay": "2",
+       "nextPart": "1"
+     },
+     {
+      "category": "dialogue",
+      "day": "1",
+      "part": "4",
+      "character": "Fred",
+      "messages": [
+      {
+        "speaker": "Barman",
+        "text": "So, how was your drink?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "I'm sorry, but I don't like this... It's... Just not my kind of drink..."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Do you want something else?"
+      },
+      {
+        "speaker": "Fred",
+        "text": "Nono! Thank you, I'm fine..."
+      },
+      {
+        "speaker": "Barman",
+        "text": "And my son just texted me... That idiot..."
+      },
+      {
+        "speaker": "Fred",
+        "text": "I think I'll go..."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Oh... Goodbye!"
+      },
+      {
+        "speaker": "Fred",
+        "text": "Bye."
+      }
+      ]
+    },
+    {
+      "category": "dialogue",
+      "day": "2",
+      "part": "1",
+      "character": "Jingke",
       "messages": [
         {
-          "speaker": "Customer",
-          "text": "Good drink"
+        "speaker": "Customer",
+        "text": "Hi human"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Good evening and welcome to the Sunfall"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Is this that Sunfall?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Well, I don't know which bar you're looking for"
+      },
+      {
+        "speaker": "Customer",
+        "text": "You don't know your place is that famous?"
+      },
+      {
+        "speaker": "Customer",
+        "text": "There are myths about your place in the cyberspace"
+      },
+      {
+        "speaker": "Customer",
+        "text": "People thinks it's a legend"
+      },
+      {
+        "speaker": "Customer",
+        "text": "I had no idea I would end up here today"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Yeah, I know but I don't like to brag"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Maybe this is the place you needed to be"
+      },
+      {
+        "speaker": "Barman",
+        "text": "How are things going?"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Not great, some problems at work"
+      },
+      {
+        "speaker": "Barman",
+        "text": "What’s your job?"
+      },
+      {
+        "speaker": "Customer",
+        "text": "I'm a net diver"
+      },
+      {
+        "speaker": "Customer",
+        "text": "I'm a myth too, you know?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "May I know your name?"
+      },
+      {
+        "speaker": "Customer",
+        "text": "I use the name [Jingke]"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Oh, so you're not a legend"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "Yeah, not an easy role"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "You probably know something about it"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Now I'm curious to listen to some epic story"
+      },
+      {
+        "speaker": "Barman",
+        "text": "What are your problems about?"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "I can't say too much"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "The group asked high level secrecy"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "Let's say it's more illegal than usual"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "I was one of the founder of the group"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "It was meant to be a political hacker collective"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "But we had come across internal problems"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "Now I help only for special jobs"
+      },
+      {
+        "speaker": "Barman",
+        "text": "So this new job it's important?"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "It could change everything"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "If we succede the biggest corporations will lose their main tecnologies"
+      },
+      {
+        "speaker": "Barman",
+        "text": "You have multiple targets?"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "It's a storic operation"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "We planned it in years"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "They knew it was coming"
+      },
+      {
+        "speaker": "Barman",
+        "text": "You don't seem the kind of android that worries about this kind of things"
+      },
+      {
+        "speaker": "Barman",
+        "text": "I've heard you have already done the impossible"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "Well, the operation it's not easy"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "But the hacking in the cyberspace it's not what worries me"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "I’ve always tried to be ethic"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "Laws are not, nowadays"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "But my code was always to choose an ethical option"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "And now I have to break it"
+      },
+      {
+        "speaker": "Jingke",
+        "text": "I would have to kill"
+      },
+               {
+        "speaker": "Barman",
+        "text": "I'm curious"
+               },
+               {
+        "speaker": "Barman",
+        "text": "What do you feel when you experience an ethical dilemma?"
+      },
+               {
+        "speaker": "Jingke",
+        "text": "I don't feel anything particularly."
+      },
+               {
+        "speaker": "Jingke",
+        "text": "But all my attention is focused on that"
+      },
+               {
+        "speaker": "Jingke",
+        "text": "I can't really process more information"
+      },
+               {
+        "speaker": "Barman",
+        "text": "Can you break it, though?"
+      },
+               {
+        "speaker": "Jingke",
+        "text": "I thought we couldn’t, honestly"
+      },
+               {
+        "speaker": "Jingke",
+        "text": "But the truth is no-one actually tried"
+      },
+               {
+        "speaker": "Barman",
+        "text": "Are you willing to, though?"
+      },
+               {
+        "speaker": "Jingke",
+        "text": "Since it’s for a good cause, yeah"
+      },
+               {
+        "speaker": "Jingke",
+        "text": "I think it's easier for me to break it"
+      },
+               {
+        "speaker": "Barman",
+        "text": "Maybe it's courage that you lack, isn't it?"
+      },
+               {
+        "speaker": "Jingke",
+        "text": "Hah. Do you think so?"
+      },
+               {
+        "speaker": "Barman",
+        "text": "Well, you are having a human experience, I think"
+      },
+               {
+        "speaker": "Barman",
+        "text": "So we can use human solution"
+      },
+               {
+        "speaker": "Barman",
+        "text": "Well, let's get started by drinking something"
+      },
+               {
+        "speaker": "Barman",
+        "text": "Do you have any preferences?"
+      },
+               {
+        "speaker": "Jingke",
+        "text": "No, but I like watermelon."
+        }
+      ]
+    },
+    {
+      "category": "order",
+      "description": "I don't have preferences but I like watermelon.",
+      "requirements": [
+        {
+          "category": "ingredient",
+          "name": "watermelon",
+          "dose": "1"
+        }
+      ],
+      "conditions": [
+        {
+          "name": "confident",
+          "bound": "min",
+          "value": 0.70
+        },
+        {
+          "name": "anxiety",
+          "bound": "max",
+          "value": 0.30
+        }
+      ],
+      "failure": "4",
+      "good": "3",
+      "best": "2"
+    },
+    {
+      "category": "dialogue",
+      "day": "2",
+      "part": "2",
+      "character": "Jingke",
+      "messages": [
+        {
+          "speaker": "Barman",
+          "text": "Did you like your drink?"
+        },
+        {
+          "speaker": "X",
+          "text": "Yeah. I like this so much."
+        },
+        {
+          "speaker": "X",
+          "text": "Happy to hear that"
+        },
+        {
+          "speaker": "Barman",
+          "text": "So, have you made a decision?"
+        },
+        {
+          "speaker": "X",
+          "text": "Not yet, but now I feel more confident"
+        },
+        {
+          "speaker": "X",
+          "text": "After talking to you, it has become easier for me to break the code I think"
+        },
+        {
+          "speaker": "X",
+          "text": "I don't feel much stress"
+        },
+        {
+          "speaker": "Barman",
+          "text": "Nice, that’s what I hoped for"
+        },
+        {
+          "speaker": "X",
+          "text": "Now I think I’ll have to go"
+        },
+        {
+          "speaker": "X",
+          "text": "See you, human"
+        },
+        {
+          "speaker": "Barman",
+          "text": "See you!"
+        }
+      ]
+    },
+    {
+      "category": "jump",
+      "nextDay": "3",
+      "nextPart": "1"
+    },
+    {
+      "category": "dialogue",
+      "day": "2",
+      "part": "3",
+      "character": "Jingke",
+      "messages": [
+        {
+          "speaker": "Barman",
+          "text": "Do you like your drink?"
+        },
+        {
+          "speaker": "Jingke",
+          "text": "Soso, human."
+        },
+          {
+            "speaker": "Jingke",
+            "text": "But don't worry"
+        },
+          {
+            "speaker": "Barman",
+            "text": "Have you made any decision?"
+        },
+          {
+            "speaker": "Jingke",
+            "text": "No, not yet. I feel a bit confused now"
+        },
+          {
+            "speaker": "Barman",
+            "text": "Oh, I'm sorry."
+        },
+          {
+            "speaker": "Jingke",
+            "text": "But I think I will. I just have to focus"
+        },
+          {
+            "speaker": "Barman",
+            "text": "That's good to hear"
+        },
+          {
+            "speaker": "Jingke",
+            "text": "Now I'll go, thank you and goodbye"
+        },
+          {
+            "speaker": "Barman",
+            "text": "Goodbye!"
+        }
+      ]
+    },
+    {
+      "category": "jump",
+      "nextDay": "3",
+      "nextPart": "1"
+    },
+    {
+      "category": "dialogue",
+      "day": "2",
+      "part": "4",
+      "character": "Jingke",
+      "messages": [
+        {
+        "speaker": "Barman",
+        "text": "How's your drink?"
+        },
+          {
+            "speaker": "Jingke",
+            "text": "It's… not what I asked for"
+        },
+          {
+            "speaker": "Barman",
+            "text": "Oh, I'm sorry!"
+        },
+          {
+            "speaker": "Jingke",
+            "text": "I feel a bit confused now"
+        },
+          {
+            "speaker": "Barman",
+            "text": "About your code?"
+        },
+          {
+            "speaker": "Jingke",
+            "text": "About anything."
+        },
+          {
+            "speaker": "Jingke",
+            "text": "I have to go now. Goodbye!"
+        },
+          {
+            "speaker": "Barman",
+            "text": "See you!"
         }
       ]
     },
     {
       "category": "dialogue",
-      "day": "1",
-      "part": "4",
-      "character": "Adam",
+      "day": "3",
+      "part": "1",
+      "character": "Zhang",
       "messages": [
         {
-          "speaker": "Customer",
-          "text": "Great drink!"
+          "speaker": "Zhang",
+          "text": "Hi!"
+        },
+        {
+          "speaker": "Barman",
+          "text": "Hey, what's up?"
+        },
+        {
+          "speaker": "Zhang",
+          "text": "I've so much tea to spill this time, Barman."
+        },
+        {
+          "speaker": "Barman",
+          "text": "Really? Have a seat then."
+        },
+        {
+          "speaker": "Barman",
+          "text": "It's a quiet evening, so I'm all ears."
+        },
+        {
+          "speaker": "Zhang",
+          "text": "Try and take a guess?"
+        },
+        {
+          "speaker": "Barman",
+          "text": "Some girls again?"
+        },
+        {
+          "speaker": "Zhang",
+          "text": "Am I that boring? Yeah, it's a girl. This time, too."
+        },
+        {
+          "speaker": "Barman",
+          "text": "Do I know her?"
+        },
+        {
+          "speaker": "Zhang",
+          "text": "Nah, I don't think so."
+        },
+        {
+          "speaker": "Zhang",
+          "text": "Her name is Ying Ying. She studies at the Nuclear Department with me."
+        },
+        {
+          "speaker": "Zhang",
+          "text": "I'll show you a little hologram I have of her."
+        },
+        {
+          "speaker": "Barman",
+          "text": "Hah, she's cute, this time."
+        },
+        {
+          "speaker": "Zhang",
+          "text": "What do you mean this time? Leyla was cute too..."
+        },
+        {
+          "speaker": "Zhang",
+          "text": "Ok, she wasn't objectively beautiful... But she was still nice... Well..."
+        },
+        {
+          "speaker": "Zhang",
+          "text": "By the way, no, this time she is cute."
+        },
+        {
+          "speaker": "Barman",
+          "text": "Have you talked to her?"
+        },
+        {
+          "speaker": "Zhang",
+          "text": "Yeah. We are classmates, we even studied together once or twice."
+        },
+        {
+          "speaker": "Barman",
+          "text": "Nice."
+        },
+        {
+          "speaker": "Barman",
+          "text": "Is she smart?"
+        },
+        {
+          "speaker": "Zhang",
+          "text": "Yeah, but she's not very keen on quantum physics."
+        },
+        {
+          "speaker": "Barman",
+          "text": "Isn't it your major?"
+        },
+        {
+          "speaker": "Zhang",
+          "text": "Yeah. So I was thinking... Maybe I can offer to help her with some lessons..."
+        },
+        {
+          "speaker": "Barman",
+          "text": "Indeed, good idea."
+        },
+        {
+          "speaker": "Zhang",
+          "text": "... But I don't know."
+        },
+        {
+          "speaker": "Barman",
+          "text": "Why?"
+        },
+        {
+          "speaker": "Zhang",
+          "text": "I don't know... What if she doesn't like me?"
+        },
+        {
+          "speaker": "Barman",
+          "text": "Why'd you say so?"
+        },
+        {
+          "speaker": "Zhang",
+          "text": "Well, what do I have to offer?"
+        },
+        {
+          "speaker": "Barman",
+          "text": "Offer?"
+        },
+        {
+          "speaker": "Zhang",
+          "text": "Yeah, apart from lessons I mean."
+        },
+        {
+          "speaker": "Zhang",
+          "text": "She's cuter, smarter, richer..."
+        },
+        {
+          "speaker": "Barman",
+          "text": "And?"
+        },
+        {
+          "speaker": "Zhang",
+          "text": "Hum, nicer?"
+        },
+        {
+          "speaker": "Barman",
+          "text": "Haha. No, I mean, why do you care about that?"
+        },
+        {
+          "speaker": "Zhang",
+          "text": "What?"
+        },
+        {
+          "speaker": "Barman",
+          "text": "She's so nice, isn't it something you should be happy about?"
+        },
+        {
+          "speaker": "Zhang",
+          "text": "But maybe she won't like me..."
+        },
+        {
+          "speaker": "Barman",
+          "text": "Well... Take your lessons, ask her out... And if she doesn't like you she will reject you."
+        },
+        {
+          "speaker": "Zhang",
+          "text": "..."
+        },
+        {
+          "speaker": "Barman",
+          "text": "Nothing more than this. It may happen, it may not, but your life won't end if so, I can assure you."
+        },
+        {
+          "speaker": "Zhang",
+          "text": "I'm not sure..."
+        },
+        {
+          "speaker": "Barman",
+          "text": "Haha, what do you say?"
+        },
+        {
+          "speaker": "Zhang",
+          "text": "Just kidding."
+        },
+        {
+          "speaker": "Zhang",
+          "text": "But I don't have enough courage to do so."
+        },
+        {
+          "speaker": "Barman",
+          "text": "Now, have something to drink first…"
+        },
+        {
+          "speaker": "Zhang",
+          "text": "I'd like something with coke, if possible."
         }
       ]
+    },
+    {
+      "category": "order",
+      "description": "I'd like something with coke, if possible.",
+      "requirements": [
+        {
+          "category": "ingredient",
+          "name": "coke",
+          "dose": "1"
+        }
+      ],
+      "conditions": [
+        {
+          "name": "tenderness",
+          "bound": "min",
+          "value": 0.50
+        },
+        {
+          "name": "anxiety",
+          "bound": "max",
+          "value": 0.30
+        },
+        {
+          "name": "confident",
+          "bound": "min",
+          "value": 0.40
+        }
+      ],
+      "failure": "4",
+      "good": "3",
+      "best": "2"
+    },
+    {
+      "category": "dialogue",
+      "day": "3",
+      "part": "2",
+      "character": "Zhang",
+      "messages": [
+      {
+        "speaker": "Barman",
+        "text": "So, did you enjoy your drink?"
+      },
+      {
+        "speaker": "Zhang",
+        "text": "Yeah, it was so sweet, and I like sweet things."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Haha, like your girl?"
+      },
+      {
+        "speaker": "Zhang",
+        "text": "Yeah, she's so sweet when she talks..."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Isn't that programmed?"
+      },
+      {
+        "speaker": "Zhang",
+        "text": "Well, it's well programmed at least."
+      },
+      {
+        "speaker": "Barman",
+        "text": "So, what are you going to do?"
+      },
+      {
+        "speaker": "Zhang",
+        "text": "You know what? I'll ask Ying Ying out."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Really?"
+      },
+      {
+        "speaker": "Zhang",
+        "text": "Yeah, you helped me make up my mind."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Nothing. I think the drink might have helped too."
+      },
+      {
+        "speaker": "Barman",
+        "text": "So, let me know."
+      },
+      {
+        "speaker": "Zhang",
+        "text": "I'll go now."
+      },
+      {
+        "speaker": "Barman",
+        "text": "See you!"
+      },
+      {
+        "speaker": "Zhang",
+        "text": "Bye!"
+      }
+    ]
+    },
+    {
+      "category": "jump",
+      "nextDay": "4",
+      "nextPart": "1"
+    },
+    {
+      "category": "dialogue",
+      "day": "3",
+      "part": "3",
+      "character": "Zhang",
+      "messages": [
+      {
+        "speaker": "Barman",
+        "text": "So, did you enjoy your drink?"
+      },
+      {
+        "speaker": "Zhang",
+        "text": "Yeah... I mean, it's a bit sour but still."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Oh, I'm sorry."
+      },
+      {
+        "speaker": "Zhang",
+        "text": "No no, it's fine."
+      },
+      {
+        "speaker": "Barman",
+        "text": "What about the girl we were talking about?"
+      },
+      {
+        "speaker": "Zhang",
+        "text": "Yeah."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Will you ask her out?"
+      },
+      {
+        "speaker": "Zhang",
+        "text": "I don't know... Maybe? I guess..."
+      },
+      {
+        "speaker": "Zhang",
+        "text": "I still have to find the courage."
+      },
+      {
+        "speaker": "Zhang",
+        "text": "But your words helped, I guess."
+      },
+      {
+        "speaker": "Zhang",
+        "text": "I'll go home now."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Goodbye!"
+      },
+      {
+        "speaker": "Zhang",
+        "text": "Bye bye."
+      }
+    ]
+    },
+    {
+      "category": "jump",
+      "nextDay": "4",
+      "nextPart": "1"
+    },
+    {
+      "category": "dialogue",
+      "day": "3",
+      "part": "4",
+      "character": "Zhang",
+      "messages": [
+      {
+        "speaker": "Barman",
+        "text": "How was your drink?"
+      },
+      {
+        "speaker": "Zhang",
+        "text": "I'm sorry, but I don't like this."
+      },
+      {
+        "speaker": "Zhang",
+        "text": "It's not your fault, I don't like the ingredients."
+      },
+      {
+        "speaker": "Barman",
+        "text": "I'm sorry."
+      },
+      {
+        "speaker": "Zhang",
+        "text": "No problem..."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Talking about that girl, what are you going to do?"
+      },
+      {
+        "speaker": "Zhang",
+        "text": "Eh, I don't know... I don't feel too good now."
+      },
+      {
+        "speaker": "Zhang",
+        "text": "I'll just wait, maybe."
+      },
+      {
+        "speaker": "Zhang",
+        "text": "I'll go home now."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Bye!"
+      },
+      {
+        "speaker": "Zhang",
+        "text": "Bye!"
+      }
+    ]
+    },
+    {
+      "category": "dialogue",
+      "day": "4",
+      "part": "1",
+      "character": "Qu Yuan",
+      "messages": [
+      {
+        "speaker": "Barman",
+        "text": "Good Evening!"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Hi... Is this the Sunset bar, right?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Yeah, we have been serving drinks since 2070."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Huh. That's nice."
+      },
+      {
+        "speaker": "Barman",
+        "text": "You don't look like you come from here, do you?"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Nono, I come from outside the city."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "The poor districts, you know?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Wow, how long have you been here?"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Three years."
+      },
+      {
+        "speaker": "Barman",
+        "text": "So, how do you feel here?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Is everything good? You look so sad."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "I like the people, the city, and the food."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Only the job is a problem for me."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Oh indeed, what do you do for a living?"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "I work in glasshouses, near the Space port."
+      },
+      {
+        "speaker": "Barman",
+        "text": "So you work in the agriculture sector."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Yeah, I grow plants for distribution."
+      },
+      {
+        "speaker": "Barman",
+        "text": "So why did you say you don't like it?"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "The salary is bad, and the working conditions are awful."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "They don't really care about us."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Well, workers from here are treated better, but for us... There's no respect."
+      },
+      {
+        "speaker": "Barman",
+        "text": "How much do they pay you?"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "500 yan. I have trouble even with groceries."
+      },
+      {
+        "speaker": "Barman",
+        "text": "What about your boss being cruel?"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "We have no rights"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "We must work 10 hours, by contract."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "But our boss makes us work 16 hours, or even 18."
+      },
+      {
+        "speaker": "Barman",
+        "text": "That's horrible."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "We are constantly pushed to get upgrades with our implements."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "It's exhausting."
+      },
+      {
+        "speaker": "Barman",
+        "text": "I'm so sorry for you."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "I want to come back home. But I just don't have the money necessary to move back there."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Would you be safe there? I've heard that the situation there is unstable."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Nono, now stable."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Economy there is good."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Sometimes better than here even."
+      },
+      {
+        "speaker": "Barman",
+        "text": "That's nice. So, how are you planning to get the money necessary to leave?"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "I want to denounce my boss to the police..."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "I'd use the compensation amount to leave."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Nice idea, I support you."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Just... I don't have courage."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "I'm a bit scared."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Why?"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "I'm scared that corrupt policemen will inform my boss."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "He would haunt me forever."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Maybe the best choice is not to directly go to the police."
+      },
+      {
+        "speaker": "Barman",
+        "text": "I've a friend who works for an independent newspaper."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Maybe you can tell him, and make him publish an article."
+      },
+      {
+        "speaker": "Barman",
+        "text": "And then, you can go to the police."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "But now I live in the glasshouse dormitory, I don't even have anywhere else to go."
+      },
+      {
+        "speaker": "Barman",
+        "text": "That's not a problem. Upstairs, we have one room nobody uses."
+      },
+      {
+        "speaker": "Barman",
+        "text": "You can stay there for all the time you need, I promise."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Nothing can happen to you there."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Thank you."
+      },
+      {
+        "speaker": "Barman",
+        "text": "You don't have to be scared."
+      },
+      {
+        "speaker": "Barman",
+        "text": "You've all the right to denounce."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Police will help you."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Let me offer you a drink, I'm sure you will feel much better after."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Thank you so much, do you have something with strawberries?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Let me see."
+      }
+    ]
+    },
+    {
+      "category": "order",
+      "description": "Do you have something with strawberries?",
+      "requirements": [
+        {
+          "category": "ingredient",
+          "name": "strawberries",
+          "dose": "1"
+        }
+      ],
+      "conditions": [
+        {
+          "name": "fear",
+          "bound": "max",
+          "value": 0.50
+        },
+        {
+          "name": "anxiety",
+          "bound": "max",
+          "value": 0.40
+        },
+        {
+          "name": "confident",
+          "bound": "min",
+          "value": 0.40
+        }
+      ],
+      "failure": "4",
+      "good": "3",
+      "best": "2"
+    },
+    {
+      "category": "dialogue",
+      "day": "4",
+      "part": "2",
+      "character": "Qu Yuan",
+      "messages": [
+      {
+        "speaker": "Qu Yuan",
+        "text": "Thank you so much, I loved it."
+      },
+      {
+        "speaker": "Barman",
+        "text": "I'm happy that you did."
+      },
+      {
+        "speaker": "Barman",
+        "text": "So, what are you going to do?"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "I think I'll call your friend and tell him my story."
+      },
+      {
+        "speaker": "Barman",
+        "text": "That's nice. By the way, feel free to move here as soon as you need."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Yeah, I'm going to the glasshouse and get something."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Ok, see you soon!"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Yeah, I'll be right back."
+      }
+    ]
+    },
+    {
+      "category": "jump",
+      "nextDay": "5",
+      "nextPart": "1"
+    },
+    {
+      "category": "dialogue",
+      "day": "4",
+      "part": "3",
+      "character": "Qu Yuan",
+      "messages": [
+      {
+        "speaker": "Qu Yuan",
+        "text": "Thank you!"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Did you like it?"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "It's just… not what I'm used to…"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "But it's good."
+      },
+      {
+        "speaker": "Barman",
+        "text": "So what are you going to do?"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "I don't know yet… I'm a bit uncertain."
+      },
+      {
+        "speaker": "Barman",
+        "text": "It's ok, take your time to decide."
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Yeah, by the way, I have to go back to work now."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Of course, see you soon!"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Bye!"
+      }
+    ]
+    },
+    {
+      "category": "jump",
+      "nextDay": "5",
+      "nextPart": "1"
+    },
+    {
+      "category": "dialogue",
+      "day": "4",
+      "part": "4",
+      "character": "Qu Yuan",
+      "messages": [
+      {
+        "speaker": "Barman",
+        "text": "Do you like this?"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "Mh, it's not what I asked for…"
+      },
+      {
+        "speaker": "Barman",
+        "text": "I'm sorry."
+      },
+      {
+        "speaker": "Barman",
+        "text": "So what are you going to do?"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "I don't know…"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "I'm sorry, I think I'll go now."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Oh, ok… See you!"
+      },
+      {
+        "speaker": "Qu Yuan",
+        "text": "..."
+      }
+    ]
+    },
+    {
+      "category": "dialogue",
+      "day": "5",
+      "part": "1",
+      "character": "Sima",
+      "messages": [
+      {
+        "speaker": "Sima",
+        "text": "Good evening!"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Hi, good evening."
+      },
+      {
+        "speaker": "Barman",
+        "text": "... Everything alright, Sima?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Yeah, why?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Hah, nothing, Sima. You just look really tired."
+      },
+      {
+        "speaker": "Sima",
+        "text": "I am, indeed."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Is this your first time coming here?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "If not, I'm sorry, I've a goldfish memory."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Yeah, I've never been in this section of the city."
+      },
+      {
+        "speaker": "Barman",
+        "text": "What brings you down here, then, Sima?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Hah, why so many questions?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Is that an interview or something?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "I'm sorry, Sima. I like to chat with my clients..."
+      },
+      {
+        "speaker": "Barman",
+        "text": "So, what can I get you?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Mh, don't worry. I guess you really were right, I'm tired and uneasy..."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Would you like to chat about that, Sima?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Would you be able to help me work my problem out?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "As long as you order something, I'm at your disposal, Sima."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Hah, venting to a random barman is not something I expected to do, but why not?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "As you please, Sima."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Can you stop calling me Sir?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Sure."
+      },
+      {
+        "speaker": "Sima",
+        "text": "I can't really go into detail, and I would rather you not to ask too much."
+      },
+      {
+        "speaker": "Barman",
+        "text": "People cite me as an example of discretion."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Let's trust people, then."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Well, imagine you're a journalist, same job as your father, ok?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Newspaper or television?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Irrelevant. Let's say you are investigating a big scandal regarding a big corporation in our country."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Are you referring to something specifically?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Irrelevant. Let's say we're talking about national safety, ok?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Does it have to do with the question of nuclear pollution?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Did you forget what I told you five seconds ago?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "No. I'm sorry. Please, go on."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Thank you!"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Ok, let's say you've been investigating for years and years..."
+      },
+      {
+        "speaker": "Sima",
+        "text": "… and you've finally found the proof that links the corporation management to this big scandal."
+      },
+      {
+        "speaker": "Barman",
+        "text": "I would be very happy, but you don't really look very happy."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Huh? Remember we're talking hypothetically. Nobody said it was me."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Got it."
+      },
+      {
+        "speaker": "Sima",
+        "text": "So, let's say you really wanted to publish your discoveries."
+      },
+      {
+        "speaker": "Barman",
+        "text": "I would want that."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Yeah. But let's say that there is almost the certainty that that corporation is gonna hunt you forever and destroy your career, at least."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Ah, I understand."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Like they did with your father's. Then what would you do?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "I would've been investigating for years, wouldn't I?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Indeed."
+      },
+      {
+        "speaker": "Barman",
+        "text": "So that means I would be deeply interested in the issue, wouldn't I?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Absolutely."
+      },
+      {
+        "speaker": "Barman",
+        "text": "But would I really be in danger of my own life if I published the news?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "It's very likely."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Would I be unable to publish it anonymously?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "You would, but you know how these things work. They will get your name in no time."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Would I have many regrets if I don't publish it?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Unimaginably corrosive regrets."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Would the lives of many people benefit from my publication?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Incredibly."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Would I be able to secure myself by changing my identity, and willing to do so, afterwards?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "With all the risks of the case, yeah, I think you would."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Ok, I think I know everything I need to know."
+      },
+      {
+        "speaker": "Barman",
+        "text": "But, as I said, this is a cafe, you need to order something."
+      },
+      {
+        "speaker": "Sima",
+        "text": "What? You're that stingy? Seriously?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "I'll get anything, I'll let you choose for me."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Just one thing: use a lot of alcohol."
+      }
+    ]
+    },
+    {
+      "category": "order",
+      "description": "I'll get anything but use a lot of alcohol.",
+      "requirements": [
+        {
+          "category": "alcohol",
+          "alcoholMin": 0.6,
+          "alcoholMax": 1.0
+        }
+      ],
+      "conditions": [
+        {
+          "name": "fear",
+          "bound": "max",
+          "value": 0.40
+        },
+        {
+          "name": "anxiety",
+          "bound": "max",
+          "value": 0.40
+        },
+        {
+          "name": "confident",
+          "bound": "min",
+          "value": 0.60
+        }
+      ],
+      "failure": "4",
+      "good": "3",
+      "best": "2"
+    },
+    {
+      "category": "dialogue",
+      "day": "5",
+      "part": "2",
+      "character": "Sima",
+      "messages": [
+      {
+        "speaker": "Barman",
+        "text": "How was your drink?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Perfect. I already feel a bit dizzy."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Hah. Do you have to drive?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "No, I'll take a flying bus."
+      },
+      {
+        "speaker": "Barman",
+        "text": "So, what are you going to do?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Hm?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "I mean, with the publication."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Oh, I will publish it."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Talking with you made me realize it's the right thing."
+      },
+      {
+        "speaker": "Barman",
+        "text": "I'm glad to hear this, but are you willing to take the risks?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Yeah, I'll talk in advance with a friend who is a policeman, maybe."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Now I'll go."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Thank you, bye!"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Goodbye."
+      },
+      {
+        "speaker": "Barman",
+        "text": "How was your drink?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Perfect. I already feel a bit dizzy."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Hah. Do you have to drive?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "No, I'll take a flying bus."
+      },
+      {
+        "speaker": "Barman",
+        "text": "So, what are you going to do?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Hm?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "I mean, with the publication."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Oh, I will publish it."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Talking with you made me realize it's the right thing."
+      },
+      {
+        "speaker": "Barman",
+        "text": "I'm glad to hear this, but are you willing to take the risks?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "Yeah, I'll talk in advance with a friend who is a policeman, maybe."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Now I'll go."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Thank you, bye!"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Goodbye."
+      }
+    ]
+    },
+    {
+      "category": "jump",
+      "nextDay": "5",
+      "nextPart": "5"
+    },
+    {
+      "category": "dialogue",
+      "day": "5",
+      "part": "3",
+      "character": "Sima",
+      "messages": [
+      {
+        "speaker": "Barman",
+        "text": "How was your drink?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "It's ok, although it's not what I expected."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Don't you like it?"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Can I make another one?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "No no, thanks."
+      },
+      {
+        "speaker": "Sima",
+        "text": "I'm ok."
+      },
+      {
+        "speaker": "Barman",
+        "text": "So, are you publishing that article?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "I don't know."
+      },
+      {
+        "speaker": "Sima",
+        "text": "I'm a bit scared."
+      },
+      {
+        "speaker": "Sima",
+        "text": "You know, I have little sons."
+      },
+      {
+        "speaker": "Sima",
+        "text": "If I didn't, I would have no problems."
+      },
+      {
+        "speaker": "Barman",
+        "text": "Well, it's ok to think well before making a decision."
+      },
+      {
+        "speaker": "Sima",
+        "text": "I think so."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Now I'll go."
+      },
+      {
+        "speaker": "Sima",
+        "text": "Thank you, bye!"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Bye!"
+      }
+    ]
+    },
+    {
+      "category": "jump",
+      "nextDay": "5",
+      "nextPart": "5"
+    },
+    {
+      "category": "dialogue",
+      "day": "5",
+      "part": "4",
+      "character": "Sima",
+      "messages": [
+      {
+        "speaker": "Barman",
+        "text": "Do you like the drink?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "That's not what I asked for…"
+      },
+      {
+        "speaker": "Barman",
+        "text": "I’m sorry."
+      },
+      {
+        "speaker": "Sima",
+        "text": "…"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Are you publishing the article, though?"
+      },
+      {
+        "speaker": "Sima",
+        "text": "I don't know…"
+      },
+      {
+        "speaker": "Sima",
+        "text": "I'm a bit scared…"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Oh."
+      },
+      {
+        "speaker": "Sima",
+        "text": "I think I'll go now, bye!"
+      },
+      {
+        "speaker": "Barman",
+        "text": "Goodbye!"
+      }
+    ]
+    },
+    {
+      "category": "dialogue",
+      "day": "5",
+      "part": "5",
+      "character": "",
+      "messages": [
+      {
+        "speaker": "Barman",
+        "text": "Well it's late."
+      },
+      {
+        "speaker": "Barman",
+        "text": "The sun is rising"
+      },
+      {
+        "speaker": "Barman",
+        "text": "It's time to close."
+      },
+      {
+        "speaker": "Barman",
+        "text": "I'll open again tomorrow at sunfall."
+      }
+    ]
+    },
+    {
+      "category": "end"
     }
   ]
 }
