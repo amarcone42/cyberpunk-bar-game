@@ -19,8 +19,12 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public GameObject[] customers;
 
+    public GameObject creditsScreen;
+
     void Start()
     {
+        HideCredits();
+
         dialogueManager = GetComponent<DialogueSystem>();
         drinkManager = GetComponent<DrinkManager>();
         mainMenuCamera.enabled = true;
@@ -196,5 +200,15 @@ public class GameManager : MonoBehaviour
     public void HideMainCharacter()
     {
         player.SetActive(false);
+    }
+
+
+    public void ShowCredits()
+    {
+        creditsScreen.SetActive(true);
+    }
+    public void HideCredits()
+    {
+        creditsScreen.SetActive(false);
     }
 }
