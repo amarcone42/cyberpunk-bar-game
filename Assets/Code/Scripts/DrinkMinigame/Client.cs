@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 [System.Serializable]
-public class Ingredient
+public class Client
 {
     private string name;
     private Stats stats;
@@ -25,7 +25,7 @@ public class Ingredient
         this.stats = stats;
     }
 
-    public Ingredient(string name, Stats stats)
+    public Client(string name, Stats stats)
     {
         this.name = name;
         this.stats = stats;
