@@ -38,4 +38,9 @@ public class Drink
             Debug.Log(drinkIngredients.Count);
         }
     }
+
+    public void RemoveComponents()
+    {
+        drinkIngredients.Clear();
+    }
 }
